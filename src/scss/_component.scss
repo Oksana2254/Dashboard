@@ -1,0 +1,149 @@
+//title
+
+%title{
+  color: $titleColor;
+  font-size: $titleFontSize;
+  font-weight: $fontMedium;
+}
+
+.page-title{
+  @extend %title;
+  text-transform: uppercase;
+}
+.section-title{
+  @extend %title;
+}
+
+
+
+//header
+
+#header{
+  width: 100%;
+  border-bottom: 1px solid $lightGrey;
+  background-color: $headerBg;
+
+
+  .user-control{
+      padding: 18px;
+      border-left: 1px solid $lightGrey;
+      font-weight: $fontRegular;
+      font-size: 20px;
+      color: #9c9c9c;
+
+    span{
+      margin: 0 20px 0 15px;
+    }
+
+    .icon-arrow-down{
+      font-size: 12px;
+
+    }
+  }
+}
+//aside
+
+%activeLink{
+  border-left-color: $orange;
+  background-color: $activeLinkBg;
+  color: $activeLinkColor;
+}
+#aside{
+  background-color: $asideBg;
+  width: $asideWidth;
+  height: 100vh;
+  left: 0;
+  z-index: 100;
+  .menu-control{
+
+    padding: 18px;
+
+    .menu-btn{
+      cursor: pointer;
+
+      span{
+        display: block;
+        width: 18px;
+        height: 2px;
+        background-color: $darkGrey;
+
+        &+span{
+        margin-top: 5px;
+      }
+
+      }
+    }
+  }
+  .aside-menu{
+    ul{
+      li{
+        color: $darkGrey;
+
+        &.active{
+          a{
+            @extend %activeLink;
+          }
+        }
+        a{
+          display: block;
+          padding: 14px;
+          border-left: 4px solid transparent;
+
+        [class*="icon-"]{
+          font-size: 17px;
+          margin-right: 15px;
+        }
+          &:hover{
+            @extend %activeLink;
+          }
+        }
+      }
+    }
+  }
+}
+
+.your-manager{
+  padding-left: 18px;
+  padding-top: 25px;
+  border-top: 1px solid $black;
+
+span{
+  text-transform: uppercase;
+  font-size: $smallTitle;
+  color: #9c9c9c;
+}
+  .manager{
+    margin-top: 18px;
+  }
+  .manager-foto{
+    a{
+      color: $blue;
+    }
+    .circle{
+      padding: 6px 6px;
+      border-radius: 50%;
+      background-color: $green ;
+      position: absolute;
+      left: 50px;
+    }
+  }
+}
+//content
+.content-wrapper{
+  padding: 18px;
+  height: calc (100 vh - 62 px);
+  overflow-y: auto;
+}
+
+//card
+
+.card{
+  background-color: $cardBg;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+
+  .card-header{
+    border-bottom: 1ps solid $lightGrey;
+    padding: 18px;
+  }
+
+}
