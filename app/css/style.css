@@ -161,7 +161,7 @@ img {
   max-width: 100%;
 }
 
-textarea {
+textarea, input {
   resize: vertical;
 }
 
@@ -238,14 +238,50 @@ button {
   font-weight: 400;
   font-size: 20px;
   color: #9c9c9c;
+  position: relative;
 }
 
 #header .user-control span {
   margin: 0 20px 0 15px;
 }
 
+#header .user-control .icon-notification:hover {
+  background-color: #f5f5f5;
+}
+
 #header .user-control .icon-arrow-down {
   font-size: 12px;
+  margin-right: 14px;
+}
+
+#header .user-control .icon-notification {
+  padding: 18px;
+  border-left: 1px solid #e3e3e3;
+  border-right: 1px solid #e3e3e3;
+}
+
+#header .user-control .icon-quit {
+  padding: 18px 0 18px 18px;
+  border-left: 1px solid #e3e3e3;
+}
+
+#header .user-control .icon-profile {
+  margin-left: 14px;
+}
+
+#header .user-control .blue-text {
+  font-weight: 300;
+  font-size: 13px;
+  color: #56819f;
+}
+
+#header .user-control .circle-one {
+  padding: 4px 4px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  background-color: #f58220;
+  position: absolute;
+  left: 216px;
 }
 
 #aside .aside-menu ul li.active a, #aside .aside-menu ul li a:hover {
@@ -312,17 +348,24 @@ button {
   margin-top: 18px;
 }
 
-.your-manager .manager-foto a {
+.your-manager .manager a {
   color: #56819f;
+  float: left;
+  margin-left: 10px;
+  margin-top: 14px;
 }
 
-.your-manager .manager-foto .circle {
+.your-manager .manager .circle {
   padding: 6px 6px;
   -webkit-border-radius: 50%;
           border-radius: 50%;
   background-color: #04ae00;
   position: absolute;
   left: 50px;
+}
+
+.your-manager .manager img {
+  float: left;
 }
 
 .content-wrapper {
@@ -339,8 +382,59 @@ button {
 }
 
 .card .card-header {
-  border-bottom: 1ps solid #e3e3e3;
+  border-bottom: 1px solid #e3e3e3;
   padding: 18px;
+}
+
+.btn {
+  padding: 20px 44px;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  color: #fff;
+}
+
+.btn-default {
+  background-color: #979797;
+}
+
+.btn-default:hover {
+  background-color: #bababa;
+}
+
+.btn-action {
+  background-color: #f58220;
+}
+
+.btn-action:hover {
+  background-color: #ffa200;
+}
+
+.btn-disabled {
+  padding: 18px 75px;
+  background-color: #e3e3e3;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+}
+
+.form-control {
+  border: 1px solid #e3e3e3;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  font-size: 12px;
+  color: #333;
+  width: 155px;
+  height: 122px;
+  font-family: "Roboto", sans-serif;
+}
+
+.form-control:focus {
+  border-color: #979797;
+  outline: 0;
+}
+
+.form-control-input {
+  width: 156px;
+  height: 38px;
 }
 
 #main {

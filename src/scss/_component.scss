@@ -30,14 +30,43 @@
       font-weight: $fontRegular;
       font-size: 20px;
       color: #9c9c9c;
+    position: relative;
 
     span{
       margin: 0 20px 0 15px;
     }
-
+    .icon-notification:hover{
+      background-color: $xsLightGrey;
+    }
     .icon-arrow-down{
       font-size: 12px;
+      margin-right: 14px;
 
+    }
+    .icon-notification{
+      padding: 18px;
+      border-left: 1px solid $lightGrey;
+      border-right: 1px solid $lightGrey;
+    }
+    .icon-quit{
+      padding: 18px 0 18px 18px;
+      border-left: 1px solid $lightGrey;
+
+    }
+    .icon-profile{
+      margin-left: 14px;
+    }
+    .blue-text{
+      font-weight: 300;
+      font-size: $smallFontSize;
+      color: $blue;
+    }
+    .circle-one{
+      padding: 4px 4px;
+      border-radius: 50%;
+      background-color: $orange ;
+      position: absolute;
+      left: 216px;
     }
   }
 }
@@ -102,29 +131,34 @@
   }
 }
 
-.your-manager{
+.your-manager {
   padding-left: 18px;
   padding-top: 25px;
   border-top: 1px solid $black;
 
-span{
-  text-transform: uppercase;
-  font-size: $smallTitle;
-  color: #9c9c9c;
-}
-  .manager{
-    margin-top: 18px;
+  span {
+    text-transform: uppercase;
+    font-size: $smallTitle;
+    color: #9c9c9c;
   }
-  .manager-foto{
-    a{
+  .manager {
+    margin-top: 18px;
+
+    a {
       color: $blue;
+      float: left;
+      margin-left: 10px;
+      margin-top: 14px;
     }
-    .circle{
+    .circle {
       padding: 6px 6px;
       border-radius: 50%;
-      background-color: $green ;
+      background-color: $green;
       position: absolute;
       left: 50px;
+    }
+    img{
+      float: left;
     }
   }
 }
@@ -137,13 +171,55 @@ span{
 
 //card
 
-.card{
+.card {
   background-color: $cardBg;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
 
-  .card-header{
-    border-bottom: 1ps solid $lightGrey;
+  .card-header {
+    border-bottom: 1px solid $lightGrey;
     padding: 18px;
   }
+}
 
+
+//btn
+.btn{
+  padding: 20px 44px;
+  border-radius: 3px;
+  color: $btn-color;
+}
+.btn-default{
+  background-color: $darkGrey;
+}
+.btn-default:hover{
+  background-color: $grey;
+}
+.btn-action{
+  background-color: $orange;
+}
+.btn-action:hover{
+  background-color: $orangeLight;
+}
+.btn-disabled{
+  padding: 18px 75px;
+  background-color: $lightGrey;
+  border-radius: 3px;
+}
+//input
+.form-control{
+  border: 1px solid $lightGrey;
+  border-radius: 3px;
+  font-size: 12px;
+  color: $black;
+  width: 155px;
+  height: 122px;
+  font-family: $fontFamily;
+}
+.form-control:focus{
+ border-color: $darkGrey;
+  outline: 0;
+}
+.form-control-input{
+  width: 156px;
+  height: 38px;
 }
