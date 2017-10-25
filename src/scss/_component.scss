@@ -14,6 +14,15 @@
   @extend %title;
 }
 
+//container
+.container{
+  margin: 0 auto;
+
+  &.sm{
+    max-width: 684px;
+  }
+}
+
 
 
 //header
@@ -30,7 +39,7 @@
       font-weight: $fontRegular;
       font-size: 20px;
       color: #9c9c9c;
-    position: relative;
+      position: relative;
 
     span{
       margin: 0 20px 0 15px;
@@ -68,8 +77,18 @@
       position: absolute;
       left: 216px;
     }
+    &.open{
+      background-color: $xsLightGrey;
+
+      .icon-arrow-down{
+        transform: rotate(180deg);
+        display: inline-block;
+        line-height: 0;
+      }
+    }
   }
 }
+
 //aside
 
 %activeLink{
@@ -179,10 +198,45 @@
     border-bottom: 1px solid $lightGrey;
     padding: 18px;
   }
+  .card-date{
+    padding: 30px 0;
+    border-bottom: 1px solid $lightGrey;
+  }
+}
+
+.datepicker-form{
+
+  .date-input-wrap{
+    padding: 5px 0;
+    display: inline-block;
+    border-radius: 3px;
+    border: 1px solid $lightGrey;
+    color: $black;
+    vertical-align: middle;
+    margin-right: 12px;
+
+    input{
+      padding: 11px 16px;
+      vertical-align: middle;
+
+      &#to{
+        border-left: 1px solid $lightGrey;
+      }
+    }
+    label{
+      padding: 0 14px 0 10px;
+      vertical-align: middle;
+      display: inline-block;
+    }
+  }
+  .btn{
+    vertical-align: middle;
+  }
 }
 
 
 //btn
+
 .btn{
   padding: 20px 44px;
   border-radius: 3px;
@@ -195,6 +249,7 @@
   background-color: $grey;
 }
 .btn-action{
+  padding: 14px 21px;
   background-color: $orange;
 }
 .btn-action:hover{
@@ -205,7 +260,10 @@
   background-color: $lightGrey;
   border-radius: 3px;
 }
+
+
 //input
+
 .form-control{
   border: 1px solid $lightGrey;
   border-radius: 3px;
@@ -222,4 +280,49 @@
 .form-control-input{
   width: 156px;
   height: 38px;
+}
+
+//dropdown
+
+.dropdown-menu{
+  display: none;
+  position: absolute;
+  padding: 10px 18px 24px;
+  background-color: $xsLightGrey;
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+
+//table
+
+.table{
+  font-size: $titleFontSize;
+  border-collapse: collapse;
+
+  tbody{
+    tr{
+      &:hover{
+        background-color: $tableTrHover;
+
+        .hide-icons{
+          opacity: 1;
+        }
+      }
+      &:last-child{
+        td{
+          border-bottom: 1px solid $lightGrey;
+        }
+      }
+    }
+    .hide-icons{
+      opacity: 0;
+      transition: all .2s linear;
+    }
+  }
+
+  td{
+    padding: 18px;
+    border-top: 1px solid $lightGrey;
+  }
 }
