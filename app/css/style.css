@@ -273,34 +273,15 @@ button {
   margin: 0 20px 0 15px;
 }
 
-#header .user-control .icon-notification:hover {
-  background-color: #f5f5f5;
-}
-
 #header .user-control .icon-arrow-down {
   font-size: 12px;
-  margin-right: 14px;
-}
-
-#header .user-control .icon-notification {
-  padding: 18px;
-  border-left: 1px solid #e3e3e3;
-  border-right: 1px solid #e3e3e3;
-}
-
-#header .user-control .icon-quit {
-  padding: 18px 0 18px 18px;
-  border-left: 1px solid #e3e3e3;
-}
-
-#header .user-control .icon-profile {
-  margin-left: 14px;
 }
 
 #header .user-control .blue-text {
   font-weight: 300;
   font-size: 13px;
   color: #56819f;
+  vertical-align: middle;
 }
 
 #header .user-control .circle-one {
@@ -309,7 +290,8 @@ button {
           border-radius: 50%;
   background-color: #f58220;
   position: absolute;
-  left: 216px;
+  left: 15px;
+  top: 15px;
 }
 
 #header .user-control.open {
@@ -322,6 +304,14 @@ button {
           transform: rotate(180deg);
   display: inline-block;
   line-height: 0;
+}
+
+#header .user-control .icon-profile {
+  vertical-align: middle;
+}
+
+#header .user-control:hover {
+  background-color: #f5f5f5;
 }
 
 #aside .aside-menu ul li.active a, #aside .aside-menu ul li a:hover {
@@ -431,6 +421,11 @@ button {
   border-bottom: 1px solid #e3e3e3;
 }
 
+.card .btn-row {
+  margin-top: 23px;
+  margin-bottom: 23px;
+}
+
 .datepicker-form .date-input-wrap {
   padding: 5px 0;
   display: inline-block;
@@ -523,6 +518,14 @@ button {
   right: 0;
 }
 
+.dropdown-menu li {
+  font-size: 12px;
+}
+
+.dropdown-menu span {
+  color: #000;
+}
+
 .table {
   font-size: 16px;
   border-collapse: collapse;
@@ -550,6 +553,76 @@ button {
 .table td {
   padding: 18px;
   border-top: 1px solid #e3e3e3;
+}
+
+.table .blue-link {
+  color: #56819f;
+}
+
+.table .icon-trash {
+  margin-left: 20px;
+}
+
+.table-small {
+  font-size: 13px;
+  border-collapse: collapse;
+}
+
+.table-small td {
+  padding: 18px;
+  border-top: 1px solid #e3e3e3;
+}
+
+.table-small tbody tr:hover {
+  background-color: #f1f3f3;
+}
+
+.table-small thead th {
+  padding-left: 19px;
+  padding-top: 35px;
+  padding-bottom: 15px;
+  color: #a6a6a6;
+}
+
+.table-small thead th:hover {
+  padding: 7px 7px;
+  background-color: #f5f5f5;
+  color: #000;
+}
+
+.table-small thead th:hover .block-on-hover {
+  opacity: 1;
+}
+
+.block-on-hover {
+  opacity: 0;
+  display: inline;
+  padding: 7px 7px;
+}
+
+.block-on-hover i {
+  display: inline-block;
+}
+
+nav {
+  text-align: center;
+}
+
+nav .pagination li a {
+  border: none;
+  color: #56819f;
+}
+
+nav .pagination i {
+  font-size: 12px;
+  vertical-align: middle;
+  color: #bababa;
+}
+
+nav .pagination li a:hover {
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  color: #a6a6a6;
 }
 
 #main {

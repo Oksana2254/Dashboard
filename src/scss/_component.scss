@@ -44,38 +44,22 @@
     span{
       margin: 0 20px 0 15px;
     }
-    .icon-notification:hover{
-      background-color: $xsLightGrey;
-    }
     .icon-arrow-down{
       font-size: 12px;
-      margin-right: 14px;
-
-    }
-    .icon-notification{
-      padding: 18px;
-      border-left: 1px solid $lightGrey;
-      border-right: 1px solid $lightGrey;
-    }
-    .icon-quit{
-      padding: 18px 0 18px 18px;
-      border-left: 1px solid $lightGrey;
-
-    }
-    .icon-profile{
-      margin-left: 14px;
     }
     .blue-text{
       font-weight: 300;
       font-size: $smallFontSize;
       color: $blue;
+      vertical-align: middle;
     }
     .circle-one{
       padding: 4px 4px;
       border-radius: 50%;
       background-color: $orange ;
       position: absolute;
-      left: 216px;
+      left: 15px;
+      top: 15px;
     }
     &.open{
       background-color: $xsLightGrey;
@@ -86,6 +70,12 @@
         line-height: 0;
       }
     }
+    .icon-profile{
+      vertical-align: middle;
+    }
+  }
+  .user-control:hover{
+    background-color: $xsLightGrey;
   }
 }
 
@@ -202,6 +192,10 @@
     padding: 30px 0;
     border-bottom: 1px solid $lightGrey;
   }
+  .btn-row{
+    margin-top: 23px;
+    margin-bottom: 23px;
+  }
 }
 
 .datepicker-form{
@@ -292,6 +286,14 @@
   top: 100%;
   left: 0;
   right: 0;
+
+
+  li{
+    font-size: $xssmallFonrSize;
+  }
+  span{
+    color: $superBlack;
+  }
 }
 
 //table
@@ -324,5 +326,76 @@
   td{
     padding: 18px;
     border-top: 1px solid $lightGrey;
+  }
+  .blue-link{
+    color: $blue;
+  }
+  .icon-trash{
+    margin-left: 20px;
+  }
+}
+
+
+.table-small {
+  font-size: $smallFontSize;
+  border-collapse: collapse;
+  td {
+    padding: 18px;
+    border-top: 1px solid $lightGrey;
+  }
+  tbody {
+    tr {
+      &:hover {
+        background-color: $tableTrHover;
+      }
+    }
+  }
+  thead{
+    th{
+      padding-left: 19px;
+      padding-top: 35px;
+      padding-bottom: 15px;
+      color: $titleColor;
+    }
+    th:hover{
+      padding: 7px 7px;
+      background-color: $xsLightGrey;
+      color: $superBlack;
+
+      .block-on-hover{
+        opacity: 1;
+      }
+    }
+  }
+
+}
+//on hover
+.block-on-hover{
+  opacity: 0;
+  display: inline;
+  padding: 7px 7px;
+
+  i{
+    display: inline-block;
+  }
+}
+
+
+//nav
+nav{
+  text-align: center;
+
+  .pagination li a {
+    border: none;
+    color: $blue;
+  }
+  .pagination i{
+    font-size: 12px;
+    vertical-align: middle;
+    color: $grey;
+  }
+  .pagination li a:hover{
+    border-radius: 5px;
+    color: $titleColor;
   }
 }
