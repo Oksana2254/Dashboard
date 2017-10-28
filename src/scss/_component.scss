@@ -141,9 +141,9 @@
 }
 
 .your-manager {
-  padding-left: 18px;
-  padding-top: 25px;
+  padding: 26px 52px 0 18px;
   border-top: 1px solid $black;
+  margin-top: 25px;
 
   span {
     text-transform: uppercase;
@@ -152,22 +152,27 @@
   }
   .manager {
     margin-top: 18px;
+    position: relative;
 
     a {
       color: $blue;
-      float: left;
-      margin-left: 10px;
-      margin-top: 14px;
+    }
+    a:hover{
+      color: $orange;
     }
     .circle {
       padding: 6px 6px;
       border-radius: 50%;
       background-color: $green;
       position: absolute;
-      left: 50px;
+      top: 0;
+      left: 32px;
     }
-    img{
-      float: left;
+
+    img {
+      width: 43px;
+      height: 43px;
+      border-radius: 50%;
     }
   }
 }
@@ -236,6 +241,9 @@
   border-radius: 3px;
   color: $btn-color;
 }
+.btn:hover{
+  color: #fff;
+}
 .btn-default{
   background-color: $darkGrey;
 }
@@ -243,7 +251,7 @@
   background-color: $grey;
 }
 .btn-action{
-  padding: 14px 21px;
+  padding: 15px 21px;
   background-color: $orange;
 }
 .btn-action:hover{
@@ -290,6 +298,11 @@
 
   li{
     font-size: $xssmallFonrSize;
+    display: flex;
+    justify-content: space-between;
+  }
+  li + li{
+    margin-top: 13px;
   }
   span{
     color: $superBlack;
@@ -358,12 +371,15 @@
       color: $titleColor;
     }
     th:hover{
-      padding: 7px 7px;
       background-color: $xsLightGrey;
       color: $superBlack;
+      transition: all 0.2s linear;
 
       .block-on-hover{
         opacity: 1;
+      }
+      .icon-arrow-up-small{
+        font-size: 10px;
       }
     }
   }
@@ -398,4 +414,13 @@ nav{
     border-radius: 5px;
     color: $titleColor;
   }
+}
+
+//dropdown reset
+.dropdown-menu{
+  float: none;
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
 }
