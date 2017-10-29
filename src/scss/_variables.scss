@@ -39,6 +39,7 @@ $asideBg: #191919;
 $asideWidth: 188px;
 $activeLinkBg: #282828;
 $activeLinkColor: #fff;
+$asideMobileWidth: 50px;
 
 //card
 $cardBg: #fff;
@@ -55,3 +56,13 @@ $btn-color:#fff;
 //table
 $tableFontSize: 13px;
 $tableTrHover: #f1f3f3;
+
+//modal
+$modalBg: #fff;
+
+//input
+$inputColor: #a6a6a6;
+$inputColorHover: #b1b1b1;
+$inputColorInvalid: #ff0000;
+$inputColorDisabled: $lightGrey;
+$inputColorFocus: $lightGrey;
