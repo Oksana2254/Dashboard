@@ -546,8 +546,16 @@ button {
   padding: 18px;
 }
 
+.card .card-form .input-group {
+  margin-right: 15px;
+}
+
 .card .card-form .input-group label {
   display: block;
+  font-size: 16px;
+  color: #a6a6a6;
+  font-weight: 500;
+  margin-bottom: 15px;
 }
 
 .card .card-form .input-group input {
@@ -651,6 +659,22 @@ button {
   border-color: #ff0000;
 }
 
+.big {
+  padding: 13px 165px;
+}
+
+.big-width {
+  width: 120px;
+}
+
+.big-width-two {
+  width: 400px;
+}
+
+.fixed-width {
+  width: 330px;
+}
+
 textarea {
   padding: 17px;
   resize: none;
@@ -749,30 +773,22 @@ textarea {
   color: #a6a6a6;
 }
 
-.table-small thead th:hover {
+.table-small thead th .icon-arrow-up-small {
+  font-size: 10px;
+  display: none;
+}
+
+.table-small thead th span:hover {
   background-color: #f5f5f5;
   color: #000;
   -webkit-transition: all 0.2s linear;
   -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
+  padding: 10px;
 }
 
-.table-small thead th:hover .block-on-hover {
-  opacity: 1;
-}
-
-.table-small thead th:hover .icon-arrow-up-small {
-  font-size: 10px;
-}
-
-.block-on-hover {
-  opacity: 0;
+.table-small thead th span:hover .icon-arrow-up-small {
   display: inline;
-  padding: 7px 7px;
-}
-
-.block-on-hover i {
-  display: inline-block;
 }
 
 nav {
@@ -1108,7 +1124,6 @@ nav .pagination li a:hover {
 .jq-number__field input {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  width: 100%;
   padding: 8px 9px;
   border: none;
   outline: none;
@@ -1213,32 +1228,22 @@ nav .pagination li a:hover {
 .jq-selectbox {
   vertical-align: middle;
   cursor: pointer;
-  width: 100%;
 }
 
 .jq-selectbox__select {
-  height: 32px;
+  height: 42px;
   padding: 0 45px 0 10px;
   border: 1px solid #CCC;
-  border-bottom-color: #B3B3B3;
   -webkit-border-radius: 4px;
           border-radius: 4px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#E6E6E6));
-  background: -webkit-linear-gradient(#FFF, #E6E6E6);
-  background: -o-linear-gradient(#FFF, #E6E6E6);
-  background: linear-gradient(#FFF, #E6E6E6);
-  -webkit-box-shadow: inset 1px -1px #F1F1F1, inset -1px 0 #F1F1F1, 0 1px 2px rgba(0, 0, 0, 0.1);
-          box-shadow: inset 1px -1px #F1F1F1, inset -1px 0 #F1F1F1, 0 1px 2px rgba(0, 0, 0, 0.1);
-  font: 14px/32px Arial, sans-serif;
   color: #333;
-  text-shadow: 1px 1px #FFF;
+  line-height: 42px;
 }
 
-.jq-selectbox__select:hover {
-  background: -webkit-gradient(linear, left top, left bottom, from(#F6F6F6), to(#E6E6E6));
-  background: -webkit-linear-gradient(#F6F6F6, #E6E6E6);
-  background: -o-linear-gradient(#F6F6F6, #E6E6E6);
-  background: linear-gradient(#F6F6F6, #E6E6E6);
+.jq-selectbox__select:focus {
+  border-color: #e3e3e3;
+  cursor: pointer;
+  color: #333;
 }
 
 .jq-selectbox__select:active {
@@ -1274,13 +1279,14 @@ nav .pagination li a:hover {
   right: 0;
   width: 34px;
   height: 100%;
-  border-left: 1px solid #CCC;
+  text-align: center;
 }
 
 .jq-selectbox__trigger-arrow::before {
   content: '\0042';
   display: inline-block;
   font-family: 'Glyphter', sans-serif;
+  text-align: center;
 }
 
 .jq-selectbox:hover .jq-selectbox__trigger-arrow {
@@ -1313,7 +1319,6 @@ nav .pagination li a:hover {
 .jq-selectbox__search input {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  width: 100%;
   margin: 0;
   padding: 5px 27px 6px 8px;
   border: 1px solid #CCC;

@@ -325,8 +325,14 @@
       padding: 18px;
     }
     .input-group{
+      margin-right: 15px;
+
       label{
         display: block;
+        font-size:  $titleFontSize;
+        color: $titleColor;
+        font-weight: 500;
+        margin-bottom: 15px;
       }
       input{
         width: 100%;
@@ -429,6 +435,18 @@
     border-color: $inputColorInvalid;
   }
 }
+.big{
+  padding: 13px 165px;
+}
+.big-width{
+  width: 120px;
+}
+.big-width-two{
+  width: 400px;
+}
+.fixed-width{
+  width: 330px;
+}
 textarea{
   padding: 17px;
   resize: none;
@@ -516,38 +534,41 @@ textarea{
       }
     }
   }
-  thead{
-    th{
+  thead {
+    th {
       padding-left: 19px;
       padding-top: 35px;
       padding-bottom: 15px;
       color: $titleColor;
-    }
-    th:hover{
-      background-color: $xsLightGrey;
-      color: $superBlack;
-      transition: all 0.2s linear;
 
-      .block-on-hover{
-        opacity: 1;
-      }
-      .icon-arrow-up-small{
+
+      .icon-arrow-up-small {
         font-size: 10px;
+        display: none;
+      }
+      span:hover {
+        background-color: $xsLightGrey;
+        color: $superBlack;
+        transition: all 0.2s linear;
+        padding: 10px;
+
+        .icon-arrow-up-small{
+          display: inline;
+        }
       }
     }
   }
-
 }
 //on hover
-.block-on-hover{
-  opacity: 0;
-  display: inline;
-  padding: 7px 7px;
-
-  i{
-    display: inline-block;
-  }
-}
+//.block-on-hover{
+//  opacity: 0;
+//  display: inline;
+//  padding: 7px 7px;
+//
+//  i{
+//    display: inline-block;
+//  }
+//}
 
 
 //nav

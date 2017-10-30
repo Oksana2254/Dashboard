@@ -221,7 +221,7 @@
 }
 .jq-number__field input {
   box-sizing: border-box;
-  width: 100%;
+  //width: 100%;
   padding: 8px 9px;
   border: none;
   outline: none;
@@ -302,22 +302,21 @@
 .jq-selectbox {
   vertical-align: middle;
   cursor: pointer;
-  width: 100%;
+  //width: 100%;
 }
 .jq-selectbox__select {
-  height: 32px;
+  height: 42px;
   padding: 0 45px 0 10px;
   border: 1px solid #CCC;
-  border-bottom-color: #B3B3B3;
   border-radius: 4px;
-  background: linear-gradient(#FFF, #E6E6E6);
-  box-shadow: inset 1px -1px #F1F1F1, inset -1px 0 #F1F1F1, 0 1px 2px rgba(0,0,0,.1);
-  font: 14px/32px Arial, sans-serif;
   color: #333;
-  text-shadow: 1px 1px #FFF;
+  line-height: 42px;
+
 }
-.jq-selectbox__select:hover {
-  background: linear-gradient(#F6F6F6, #E6E6E6);
+.jq-selectbox__select:focus {
+  border-color: $inputColorFocus;
+  cursor: pointer;
+  color: $black;
 }
 .jq-selectbox__select:active {
   background: #F5F5F5;
@@ -345,23 +344,13 @@
   right: 0;
   width: 34px;
   height: 100%;
-  border-left: 1px solid #CCC;
+  text-align:center ;
 }
-//.jq-selectbox__trigger-arrow {
-////  position: absolute;
-////  top: 14px;
-////  right: 12px;
-////  width: 0;
-////  height: 0;
-////  border-top: 5px solid #999;
-////  border-right: 5px solid transparent;
-////  border-left: 5px solid transparent;
-////}
-
 .jq-selectbox__trigger-arrow::before{
     content: '\0042';
   display: inline-block;
   font-family: 'Glyphter', sans-serif;
+  text-align: center;
 
 }
 .jq-selectbox:hover .jq-selectbox__trigger-arrow {
@@ -386,7 +375,7 @@
 }
 .jq-selectbox__search input {
   box-sizing: border-box;
-  width: 100%;
+  //width: 100%;
   margin: 0;
   padding: 5px 27px 6px 8px;
   border: 1px solid #CCC;
