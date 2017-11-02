@@ -21,6 +21,9 @@
   z-index: 99;
   top: 0;
 }
+.grow-one{
+  flex-flow: 1;
+}
 
 //text-align
 .text-center{
@@ -43,4 +46,9 @@
 //text-weight
 .text-bold{
   font-weight: 700;
+}
+
+//margin
+.ml-auto{
+  margin-left: auto;
 }

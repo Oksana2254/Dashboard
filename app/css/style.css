@@ -180,658 +180,6 @@ button {
 }
 
 /*STYLE RESET END*/
-.flex-container {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-}
-
-.justify-sb {
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.align-center {
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.justify-end {
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-
-.align-self-end {
-  -webkit-align-self: flex-end;
-      -ms-flex-item-align: end;
-          align-self: flex-end;
-}
-
-.fixed-to-top {
-  position: fixed;
-  z-index: 99;
-  top: 0;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.text-orange {
-  color: #f58220;
-}
-
-.text-grey {
-  color: #bababa;
-}
-
-.full-width {
-  width: 100%;
-}
-
-.text-bold {
-  font-weight: 700;
-}
-
-#loading {
-  background-color: #374140;
-  height: 100%;
-  width: 100%;
-  position: fixed;
-  z-index: 101;
-  margin-top: 0;
-  top: 0;
-  -webkit-transition: opasity .3s linear, z-index .1s linear .3s;
-  -o-transition: opasity .3s linear, z-index .1s linear .3s;
-  transition: opasity .3s linear, z-index .1s linear .3s;
-}
-
-#loading.hide {
-  z-index: -1;
-  opacity: 0;
-}
-
-#loading-center {
-  width: 100%;
-  height: 100%;
-  position: relative;
-}
-
-#loading-center-absolute {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  height: 150px;
-  width: 150px;
-  margin-top: -75px;
-  margin-left: -75px;
-}
-
-.object {
-  width: 20px;
-  height: 20px;
-  background-color: #FFF;
-  float: left;
-  margin-right: 20px;
-  margin-top: 65px;
-  -webkit-border-radius: 50% 50% 50% 50%;
-  border-radius: 50% 50% 50% 50%;
-}
-
-#object_one {
-  -webkit-animation: object_one 1.5s infinite;
-  animation: object_one 1.5s infinite;
-}
-
-#object_two {
-  -webkit-animation: object_two 1.5s infinite;
-  animation: object_two 1.5s infinite;
-  -webkit-animation-delay: 0.25s;
-  animation-delay: 0.25s;
-}
-
-#object_three {
-  -webkit-animation: object_three 1.5s infinite;
-  animation: object_three 1.5s infinite;
-  -webkit-animation-delay: 0.5s;
-  animation-delay: 0.5s;
-}
-
-@-webkit-keyframes object_one {
-  75% {
-    -webkit-transform: scale(0);
-  }
-}
-
-@keyframes object_one {
-  75% {
-    transform: scale(0);
-    -webkit-transform: scale(0);
-  }
-}
-
-@-webkit-keyframes object_two {
-  75% {
-    -webkit-transform: scale(0);
-  }
-}
-
-@keyframes object_two {
-  75% {
-    transform: scale(0);
-    -webkit-transform: scale(0);
-  }
-}
-
-@-webkit-keyframes object_three {
-  75% {
-    -webkit-transform: scale(0);
-  }
-}
-
-@keyframes object_three {
-  75% {
-    transform: scale(0);
-    -webkit-transform: scale(0);
-  }
-}
-
-.page-title, .section-title {
-  color: #a6a6a6;
-  font-size: 16px;
-  font-weight: 500;
-}
-
-.page-title {
-  text-transform: uppercase;
-}
-
-.container {
-  margin: 0 auto;
-}
-
-.container.sm {
-  max-width: 684px;
-}
-
-#header {
-  width: 100%;
-  border-bottom: 1px solid #e3e3e3;
-  background-color: #fff;
-}
-
-#header .user-control {
-  padding: 18px;
-  border-left: 1px solid #e3e3e3;
-  font-weight: 400;
-  font-size: 20px;
-  color: #9c9c9c;
-  position: relative;
-}
-
-#header .user-control span {
-  margin: 0 20px 0 15px;
-}
-
-#header .user-control .icon-arrow-down {
-  font-size: 12px;
-}
-
-#header .user-control .blue-text {
-  font-weight: 300;
-  font-size: 13px;
-  color: #56819f;
-  vertical-align: middle;
-}
-
-#header .user-control .circle-one {
-  padding: 4px 4px;
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
-  background-color: #f58220;
-  position: absolute;
-  left: 15px;
-  top: 15px;
-}
-
-#header .user-control.open {
-  background-color: #f5f5f5;
-}
-
-#header .user-control.open .icon-arrow-down {
-  -webkit-transform: rotate(180deg);
-      -ms-transform: rotate(180deg);
-          transform: rotate(180deg);
-  display: inline-block;
-  line-height: 0;
-}
-
-#header .user-control .icon-profile {
-  vertical-align: middle;
-}
-
-#header .user-control:hover {
-  background-color: #f5f5f5;
-}
-
-#aside .aside-menu ul li.active a, #aside .aside-menu ul li a:hover {
-  border-left-color: #f58220;
-  background-color: #282828;
-  color: #fff;
-}
-
-#aside {
-  background-color: #191919;
-  width: 188px;
-  height: 100vh;
-  left: 0;
-  z-index: 100;
-}
-
-#aside .menu-control {
-  padding: 18px;
-}
-
-#aside .menu-control .menu-btn {
-  cursor: pointer;
-}
-
-#aside .menu-control .menu-btn span {
-  display: block;
-  width: 18px;
-  height: 2px;
-  background-color: #979797;
-}
-
-#aside .menu-control .menu-btn span + span {
-  margin-top: 5px;
-}
-
-#aside .aside-menu ul li {
-  color: #979797;
-}
-
-#aside .aside-menu ul li a {
-  display: block;
-  padding: 14px;
-  border-left: 4px solid transparent;
-}
-
-#aside .aside-menu ul li a [class*="icon-"] {
-  font-size: 17px;
-  margin-right: 15px;
-}
-
-.your-manager {
-  padding: 26px 52px 0 18px;
-  border-top: 1px solid #333;
-  margin-top: 25px;
-}
-
-.your-manager span {
-  text-transform: uppercase;
-  font-size: 14px;
-  color: #9c9c9c;
-}
-
-.your-manager .manager {
-  margin-top: 18px;
-  position: relative;
-}
-
-.your-manager .manager a {
-  color: #56819f;
-}
-
-.your-manager .manager a:hover {
-  color: #f58220;
-}
-
-.your-manager .manager .circle {
-  padding: 6px 6px;
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
-  background-color: #04ae00;
-  position: absolute;
-  top: 0;
-  left: 32px;
-}
-
-.your-manager .manager img {
-  width: 43px;
-  height: 43px;
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
-}
-
-.content-wrapper {
-  padding: 18px;
-  height: -webkit-calc 100 vh-62 px;
-  height: calc 100 vh-62 px;
-  overflow-y: auto;
-}
-
-.card {
-  background-color: #fff;
-  -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
-          box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
-}
-
-.card .card-header {
-  border-bottom: 1px solid #e3e3e3;
-  padding: 18px;
-}
-
-.card .card-date {
-  padding: 30px 0;
-  border-bottom: 1px solid #e3e3e3;
-}
-
-.card .btn-row {
-  margin-top: 23px;
-  margin-bottom: 23px;
-}
-
-.card .card-form .select-group {
-  padding: 18px;
-}
-
-.card .card-form .input-group {
-  margin-right: 15px;
-}
-
-.card .card-form .input-group label {
-  display: block;
-  font-size: 16px;
-  color: #a6a6a6;
-  font-weight: 500;
-  margin-bottom: 15px;
-}
-
-.card .card-form .input-group input {
-  width: 100%;
-}
-
-.datepicker-form .date-input-wrap {
-  padding: 5px 0;
-  display: inline-block;
-  -webkit-border-radius: 3px;
-          border-radius: 3px;
-  border: 1px solid #e3e3e3;
-  color: #333;
-  vertical-align: middle;
-  margin-right: 12px;
-}
-
-.datepicker-form .date-input-wrap input {
-  padding: 11px 16px;
-  vertical-align: middle;
-}
-
-.datepicker-form .date-input-wrap input#to {
-  border-left: 1px solid #e3e3e3;
-}
-
-.datepicker-form .date-input-wrap label {
-  padding: 0 14px 0 10px;
-  vertical-align: middle;
-  display: inline-block;
-}
-
-.datepicker-form .btn {
-  vertical-align: middle;
-}
-
-.btn {
-  padding: 20px 44px;
-  -webkit-border-radius: 3px;
-          border-radius: 3px;
-  color: #fff;
-}
-
-.btn:hover {
-  color: #fff;
-}
-
-.btn-default {
-  background-color: #979797;
-}
-
-.btn-default:hover {
-  background-color: #bababa;
-}
-
-.btn-action {
-  padding: 15px 21px;
-  background-color: #f58220;
-}
-
-.btn-action:hover {
-  background-color: #ffa200;
-}
-
-.btn-disabled {
-  padding: 18px 75px;
-  background-color: #e3e3e3;
-  -webkit-border-radius: 3px;
-          border-radius: 3px;
-}
-
-.form-control {
-  border: 1px solid #e3e3e3;
-  -webkit-border-radius: 2px;
-          border-radius: 2px;
-  font-size: 12px;
-  color: #a6a6a6;
-  padding: 13px 16px;
-  font-family: "Roboto", sans-serif;
-}
-
-.form-control:hover {
-  border-color: #b1b1b1;
-  cursor: pointer;
-  color: #333;
-}
-
-.form-control:focus {
-  border-color: #e3e3e3;
-  cursor: pointer;
-  color: #333;
-}
-
-.form-control:disabled {
-  cursor: not-allowed;
-  border-color: #e3e3e3;
-  background-color: #e3e3e3;
-}
-
-.form-control:invalid {
-  border-color: #ff0000;
-}
-
-.big {
-  padding: 13px 165px;
-}
-
-.big-width {
-  width: 120px;
-}
-
-.big-width-two {
-  width: 400px;
-}
-
-.fixed-width {
-  width: 330px;
-}
-
-textarea {
-  padding: 17px;
-  resize: none;
-  color: #000;
-}
-
-.dropdown-menu {
-  display: none;
-  position: absolute;
-  padding: 10px 18px 24px;
-  background-color: #f5f5f5;
-  top: 100%;
-  left: 0;
-  right: 0;
-}
-
-.dropdown-menu li {
-  font-size: 12px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.dropdown-menu li + li {
-  margin-top: 13px;
-}
-
-.dropdown-menu span {
-  color: #000;
-}
-
-.dropdown-menu a:hover {
-  color: #f58220;
-}
-
-.table {
-  font-size: 16px;
-  border-collapse: collapse;
-}
-
-.table tbody tr:hover {
-  background-color: #f1f3f3;
-}
-
-.table tbody tr:hover .hide-icons {
-  opacity: 1;
-}
-
-.table tbody tr:last-child td {
-  border-bottom: 1px solid #e3e3e3;
-}
-
-.table tbody .hide-icons {
-  opacity: 0;
-  -webkit-transition: all .2s linear;
-  -o-transition: all .2s linear;
-  transition: all .2s linear;
-}
-
-.table td {
-  padding: 18px;
-  border-top: 1px solid #e3e3e3;
-}
-
-.table .blue-link {
-  color: #56819f;
-}
-
-.table .icon-trash {
-  margin-left: 20px;
-}
-
-.table-small {
-  font-size: 13px;
-  border-collapse: collapse;
-}
-
-.table-small td {
-  padding: 18px;
-  border-top: 1px solid #e3e3e3;
-}
-
-.table-small tbody tr:hover {
-  background-color: #f1f3f3;
-}
-
-.table-small thead th {
-  padding-left: 19px;
-  padding-top: 35px;
-  padding-bottom: 15px;
-  color: #a6a6a6;
-}
-
-.table-small thead th .icon-arrow-up-small {
-  font-size: 10px;
-  display: none;
-}
-
-.table-small thead th span:hover {
-  background-color: #f5f5f5;
-  color: #000;
-  -webkit-transition: all 0.2s linear;
-  -o-transition: all 0.2s linear;
-  transition: all 0.2s linear;
-  padding: 10px;
-}
-
-.table-small thead th span:hover .icon-arrow-up-small {
-  display: inline;
-}
-
-nav {
-  text-align: center;
-}
-
-nav .pagination li a {
-  border: none;
-  color: #56819f;
-}
-
-nav .pagination i {
-  font-size: 12px;
-  vertical-align: middle;
-  color: #bababa;
-}
-
-nav .pagination li a:hover {
-  -webkit-border-radius: 5px;
-          border-radius: 5px;
-  color: #a6a6a6;
-}
-
-.dropdown-menu {
-  float: none;
-  margin: 0;
-  border: none;
-  -webkit-border-radius: 0;
-          border-radius: 0;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-
-.modal {
-  background-color: #fff;
-  display: none;
-}
-
-.modal#links {
-  min-height: 100px;
-  width: 70%;
-}
-
 .jq-checkbox,
 .jq-radio {
   position: relative;
@@ -1566,6 +914,1664 @@ input[type='submit'].styler[disabled] {
   color: #888;
 }
 
+/*************** SCROLLBAR BASE CSS ***************/
+.scroll-wrapper {
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: relative;
+}
+
+.scroll-wrapper > .scroll-content {
+  border: none !important;
+  -webkit-box-sizing: content-box !important;
+          box-sizing: content-box !important;
+  height: auto;
+  left: 0;
+  margin: 0;
+  max-height: none;
+  max-width: none !important;
+  overflow: scroll !important;
+  padding: 0;
+  position: relative !important;
+  top: 0;
+  width: auto !important;
+}
+
+.scroll-wrapper > .scroll-content::-webkit-scrollbar {
+  height: 0;
+  width: 0;
+}
+
+.scroll-element {
+  display: none;
+}
+
+.scroll-element, .scroll-element div {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+.scroll-element.scroll-x.scroll-scrollx_visible,
+.scroll-element.scroll-y.scroll-scrolly_visible {
+  display: block;
+}
+
+.scroll-element .scroll-bar,
+.scroll-element .scroll-arrow {
+  cursor: default;
+}
+
+.scroll-textarea {
+  border: 1px solid #cccccc;
+  border-top-color: #999999;
+}
+
+.scroll-textarea > .scroll-content {
+  overflow: hidden !important;
+}
+
+.scroll-textarea > .scroll-content > textarea {
+  border: none !important;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 100% !important;
+  margin: 0;
+  max-height: none !important;
+  max-width: none !important;
+  overflow: scroll !important;
+  outline: none;
+  padding: 2px;
+  position: relative !important;
+  top: 0;
+  width: 100% !important;
+}
+
+.scroll-textarea > .scroll-content > textarea::-webkit-scrollbar {
+  height: 0;
+  width: 0;
+}
+
+/*************** SIMPLE INNER SCROLLBAR ***************/
+.scrollbar-inner > .scroll-element,
+.scrollbar-inner > .scroll-element div {
+  border: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  z-index: 10;
+}
+
+.scrollbar-inner > .scroll-element div {
+  display: block;
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.scrollbar-inner > .scroll-element.scroll-x {
+  bottom: 2px;
+  height: 8px;
+  left: 0;
+  width: 100%;
+}
+
+.scrollbar-inner > .scroll-element.scroll-y {
+  height: 100%;
+  right: 2px;
+  top: 0;
+  width: 16px;
+}
+
+.scrollbar-inner > .scroll-element .scroll-element_outer {
+  overflow: hidden;
+}
+
+.scrollbar-inner > .scroll-element .scroll-element_track,
+.scrollbar-inner > .scroll-element .scroll-bar {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+  filter: alpha(opacity=40);
+  opacity: 0.4;
+}
+
+.scrollbar-inner > .scroll-element .scroll-element_track {
+  background-color: #e0e0e0;
+}
+
+.scrollbar-inner > .scroll-element .scroll-bar {
+  background-color: #c2c2c2;
+}
+
+.scrollbar-inner > .scroll-element:hover .scroll-bar {
+  background-color: #919191;
+}
+
+.scrollbar-inner > .scroll-element.scroll-draggable .scroll-bar {
+  background-color: #919191;
+}
+
+/* update scrollbar offset if both scrolls are visible */
+.scrollbar-inner > .scroll-element.scroll-x.scroll-scrolly_visible .scroll-element_track {
+  left: -12px;
+}
+
+.scrollbar-inner > .scroll-element.scroll-y.scroll-scrollx_visible .scroll-element_track {
+  top: -12px;
+}
+
+.scrollbar-inner > .scroll-element.scroll-x.scroll-scrolly_visible .scroll-element_size {
+  left: -12px;
+}
+
+.scrollbar-inner > .scroll-element.scroll-y.scroll-scrollx_visible .scroll-element_size {
+  top: -12px;
+}
+
+/*************** SIMPLE OUTER SCROLLBAR ***************/
+.scrollbar-outer > .scroll-element,
+.scrollbar-outer > .scroll-element div {
+  border: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  z-index: 10;
+}
+
+.scrollbar-outer > .scroll-element {
+  background-color: #ffffff;
+}
+
+.scrollbar-outer > .scroll-element div {
+  display: block;
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.scrollbar-outer > .scroll-element.scroll-x {
+  bottom: 0;
+  height: 12px;
+  left: 0;
+  width: 100%;
+}
+
+.scrollbar-outer > .scroll-element.scroll-y {
+  height: 100%;
+  right: 0;
+  top: 0;
+  width: 12px;
+}
+
+.scrollbar-outer > .scroll-element.scroll-x .scroll-element_outer {
+  height: 8px;
+  top: 2px;
+}
+
+.scrollbar-outer > .scroll-element.scroll-y .scroll-element_outer {
+  left: 2px;
+  width: 8px;
+}
+
+.scrollbar-outer > .scroll-element .scroll-element_outer {
+  overflow: hidden;
+}
+
+.scrollbar-outer > .scroll-element .scroll-element_track {
+  background-color: #eeeeee;
+}
+
+.scrollbar-outer > .scroll-element .scroll-element_outer,
+.scrollbar-outer > .scroll-element .scroll-element_track,
+.scrollbar-outer > .scroll-element .scroll-bar {
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+}
+
+.scrollbar-outer > .scroll-element .scroll-bar {
+  background-color: #d9d9d9;
+}
+
+.scrollbar-outer > .scroll-element .scroll-bar:hover {
+  background-color: #c2c2c2;
+}
+
+.scrollbar-outer > .scroll-element.scroll-draggable .scroll-bar {
+  background-color: #919191;
+}
+
+/* scrollbar height/width & offset from container borders */
+.scrollbar-outer > .scroll-content.scroll-scrolly_visible {
+  left: -12px;
+  margin-left: 12px;
+}
+
+.scrollbar-outer > .scroll-content.scroll-scrollx_visible {
+  top: -12px;
+  margin-top: 12px;
+}
+
+.scrollbar-outer > .scroll-element.scroll-x .scroll-bar {
+  min-width: 10px;
+}
+
+.scrollbar-outer > .scroll-element.scroll-y .scroll-bar {
+  min-height: 10px;
+}
+
+/* update scrollbar offset if both scrolls are visible */
+.scrollbar-outer > .scroll-element.scroll-x.scroll-scrolly_visible .scroll-element_track {
+  left: -14px;
+}
+
+.scrollbar-outer > .scroll-element.scroll-y.scroll-scrollx_visible .scroll-element_track {
+  top: -14px;
+}
+
+.scrollbar-outer > .scroll-element.scroll-x.scroll-scrolly_visible .scroll-element_size {
+  left: -14px;
+}
+
+.scrollbar-outer > .scroll-element.scroll-y.scroll-scrollx_visible .scroll-element_size {
+  top: -14px;
+}
+
+/*************** SCROLLBAR MAC OS X ***************/
+.scrollbar-macosx > .scroll-element,
+.scrollbar-macosx > .scroll-element div {
+  background: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  z-index: 10;
+}
+
+.scrollbar-macosx > .scroll-element div {
+  display: block;
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.scrollbar-macosx > .scroll-element .scroll-element_track {
+  display: none;
+}
+
+.scrollbar-macosx > .scroll-element .scroll-bar {
+  background-color: #6C6E71;
+  display: block;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  opacity: 0;
+  -webkit-border-radius: 7px;
+  border-radius: 7px;
+  -webkit-transition: opacity 0.2s linear;
+  -o-transition: opacity 0.2s linear;
+  transition: opacity 0.2s linear;
+}
+
+.scrollbar-macosx:hover > .scroll-element .scroll-bar,
+.scrollbar-macosx > .scroll-element.scroll-draggable .scroll-bar {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+  filter: alpha(opacity=70);
+  opacity: 0.7;
+}
+
+.scrollbar-macosx > .scroll-element.scroll-x {
+  bottom: 0px;
+  height: 0px;
+  left: 0;
+  min-width: 100%;
+  overflow: visible;
+  width: 100%;
+}
+
+.scrollbar-macosx > .scroll-element.scroll-y {
+  height: 100%;
+  min-height: 100%;
+  right: 0px;
+  top: 0;
+  width: 0px;
+}
+
+/* scrollbar height/width & offset from container borders */
+.scrollbar-macosx > .scroll-element.scroll-x .scroll-bar {
+  height: 7px;
+  min-width: 10px;
+  top: -9px;
+}
+
+.scrollbar-macosx > .scroll-element.scroll-y .scroll-bar {
+  left: -9px;
+  min-height: 10px;
+  width: 7px;
+}
+
+.scrollbar-macosx > .scroll-element.scroll-x .scroll-element_outer {
+  left: 2px;
+}
+
+.scrollbar-macosx > .scroll-element.scroll-x .scroll-element_size {
+  left: -4px;
+}
+
+.scrollbar-macosx > .scroll-element.scroll-y .scroll-element_outer {
+  top: 2px;
+}
+
+.scrollbar-macosx > .scroll-element.scroll-y .scroll-element_size {
+  top: -4px;
+}
+
+/* update scrollbar offset if both scrolls are visible */
+.scrollbar-macosx > .scroll-element.scroll-x.scroll-scrolly_visible .scroll-element_size {
+  left: -11px;
+}
+
+.scrollbar-macosx > .scroll-element.scroll-y.scroll-scrollx_visible .scroll-element_size {
+  top: -11px;
+}
+
+/*************** SCROLLBAR LIGHT ***************/
+.scrollbar-light > .scroll-element,
+.scrollbar-light > .scroll-element div {
+  border: none;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  z-index: 10;
+}
+
+.scrollbar-light > .scroll-element {
+  background-color: #ffffff;
+}
+
+.scrollbar-light > .scroll-element div {
+  display: block;
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.scrollbar-light > .scroll-element .scroll-element_outer {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.scrollbar-light > .scroll-element .scroll-element_size {
+  background: #dbdbdb;
+  background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2RiZGJkYiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlOGU4ZTgiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+");
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #dbdbdb), color-stop(100%, #e8e8e8));
+  background: -webkit-linear-gradient(left, #dbdbdb 0%, #e8e8e8 100%);
+  background: -o-linear-gradient(left, #dbdbdb 0%, #e8e8e8 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#dbdbdb), to(#e8e8e8));
+  background: linear-gradient(to right, #dbdbdb 0%, #e8e8e8 100%);
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.scrollbar-light > .scroll-element.scroll-x {
+  bottom: 0;
+  height: 17px;
+  left: 0;
+  min-width: 100%;
+  width: 100%;
+}
+
+.scrollbar-light > .scroll-element.scroll-y {
+  height: 100%;
+  min-height: 100%;
+  right: 0;
+  top: 0;
+  width: 17px;
+}
+
+.scrollbar-light > .scroll-element .scroll-bar {
+  background: #fefefe;
+  background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZlZmVmZSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmNWY1ZjUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+");
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #fefefe), color-stop(100%, #f5f5f5));
+  background: -webkit-linear-gradient(left, #fefefe 0%, #f5f5f5 100%);
+  background: -o-linear-gradient(left, #fefefe 0%, #f5f5f5 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#fefefe), to(#f5f5f5));
+  background: linear-gradient(to right, #fefefe 0%, #f5f5f5 100%);
+  border: 1px solid #dbdbdb;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+/* scrollbar height/width & offset from container borders */
+.scrollbar-light > .scroll-content.scroll-scrolly_visible {
+  left: -17px;
+  margin-left: 17px;
+}
+
+.scrollbar-light > .scroll-content.scroll-scrollx_visible {
+  top: -17px;
+  margin-top: 17px;
+}
+
+.scrollbar-light > .scroll-element.scroll-x .scroll-bar {
+  height: 10px;
+  min-width: 10px;
+  top: 0px;
+}
+
+.scrollbar-light > .scroll-element.scroll-y .scroll-bar {
+  left: 0px;
+  min-height: 10px;
+  width: 10px;
+}
+
+.scrollbar-light > .scroll-element.scroll-x .scroll-element_outer {
+  height: 12px;
+  left: 2px;
+  top: 2px;
+}
+
+.scrollbar-light > .scroll-element.scroll-x .scroll-element_size {
+  left: -4px;
+}
+
+.scrollbar-light > .scroll-element.scroll-y .scroll-element_outer {
+  left: 2px;
+  top: 2px;
+  width: 12px;
+}
+
+.scrollbar-light > .scroll-element.scroll-y .scroll-element_size {
+  top: -4px;
+}
+
+/* update scrollbar offset if both scrolls are visible */
+.scrollbar-light > .scroll-element.scroll-x.scroll-scrolly_visible .scroll-element_size {
+  left: -19px;
+}
+
+.scrollbar-light > .scroll-element.scroll-y.scroll-scrollx_visible .scroll-element_size {
+  top: -19px;
+}
+
+.scrollbar-light > .scroll-element.scroll-x.scroll-scrolly_visible .scroll-element_track {
+  left: -19px;
+}
+
+.scrollbar-light > .scroll-element.scroll-y.scroll-scrollx_visible .scroll-element_track {
+  top: -19px;
+}
+
+/*************** SCROLLBAR RAIL ***************/
+.scrollbar-rail > .scroll-element,
+.scrollbar-rail > .scroll-element div {
+  border: none;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  z-index: 10;
+}
+
+.scrollbar-rail > .scroll-element {
+  background-color: #ffffff;
+}
+
+.scrollbar-rail > .scroll-element div {
+  display: block;
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.scrollbar-rail > .scroll-element .scroll-element_size {
+  background-color: #999;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.scrollbar-rail > .scroll-element .scroll-element_outer:hover .scroll-element_size {
+  background-color: #666;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.scrollbar-rail > .scroll-element.scroll-x {
+  bottom: 0;
+  height: 12px;
+  left: 0;
+  min-width: 100%;
+  padding: 3px 0 2px;
+  width: 100%;
+}
+
+.scrollbar-rail > .scroll-element.scroll-y {
+  height: 100%;
+  min-height: 100%;
+  padding: 0 2px 0 3px;
+  right: 0;
+  top: 0;
+  width: 12px;
+}
+
+.scrollbar-rail > .scroll-element .scroll-bar {
+  background-color: #d0b9a0;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+          box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.scrollbar-rail > .scroll-element .scroll-element_outer:hover .scroll-bar {
+  -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+          box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+/* scrollbar height/width & offset from container borders */
+.scrollbar-rail > .scroll-content.scroll-scrolly_visible {
+  left: -17px;
+  margin-left: 17px;
+}
+
+.scrollbar-rail > .scroll-content.scroll-scrollx_visible {
+  margin-top: 17px;
+  top: -17px;
+}
+
+.scrollbar-rail > .scroll-element.scroll-x .scroll-bar {
+  height: 10px;
+  min-width: 10px;
+  top: 1px;
+}
+
+.scrollbar-rail > .scroll-element.scroll-y .scroll-bar {
+  left: 1px;
+  min-height: 10px;
+  width: 10px;
+}
+
+.scrollbar-rail > .scroll-element.scroll-x .scroll-element_outer {
+  height: 15px;
+  left: 5px;
+}
+
+.scrollbar-rail > .scroll-element.scroll-x .scroll-element_size {
+  height: 2px;
+  left: -10px;
+  top: 5px;
+}
+
+.scrollbar-rail > .scroll-element.scroll-y .scroll-element_outer {
+  top: 5px;
+  width: 15px;
+}
+
+.scrollbar-rail > .scroll-element.scroll-y .scroll-element_size {
+  left: 5px;
+  top: -10px;
+  width: 2px;
+}
+
+/* update scrollbar offset if both scrolls are visible */
+.scrollbar-rail > .scroll-element.scroll-x.scroll-scrolly_visible .scroll-element_size {
+  left: -25px;
+}
+
+.scrollbar-rail > .scroll-element.scroll-y.scroll-scrollx_visible .scroll-element_size {
+  top: -25px;
+}
+
+.scrollbar-rail > .scroll-element.scroll-x.scroll-scrolly_visible .scroll-element_track {
+  left: -25px;
+}
+
+.scrollbar-rail > .scroll-element.scroll-y.scroll-scrollx_visible .scroll-element_track {
+  top: -25px;
+}
+
+/*************** SCROLLBAR DYNAMIC ***************/
+.scrollbar-dynamic > .scroll-element,
+.scrollbar-dynamic > .scroll-element div {
+  background: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  z-index: 10;
+}
+
+.scrollbar-dynamic > .scroll-element div {
+  display: block;
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.scrollbar-dynamic > .scroll-element.scroll-x {
+  bottom: 2px;
+  height: 7px;
+  left: 0;
+  min-width: 100%;
+  width: 100%;
+}
+
+.scrollbar-dynamic > .scroll-element.scroll-y {
+  height: 100%;
+  min-height: 100%;
+  right: 2px;
+  top: 0;
+  width: 7px;
+}
+
+.scrollbar-dynamic > .scroll-element .scroll-element_outer {
+  opacity: 0.3;
+  -webkit-border-radius: 12px;
+  border-radius: 12px;
+}
+
+.scrollbar-dynamic > .scroll-element .scroll-element_size {
+  background-color: #cccccc;
+  opacity: 0;
+  -webkit-border-radius: 12px;
+  border-radius: 12px;
+  -webkit-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.scrollbar-dynamic > .scroll-element .scroll-bar {
+  background-color: #6c6e71;
+  -webkit-border-radius: 7px;
+  border-radius: 7px;
+}
+
+/* scrollbar height/width & offset from container borders */
+.scrollbar-dynamic > .scroll-element.scroll-x .scroll-bar {
+  bottom: 0;
+  height: 7px;
+  min-width: 24px;
+  top: auto;
+}
+
+.scrollbar-dynamic > .scroll-element.scroll-y .scroll-bar {
+  left: auto;
+  min-height: 24px;
+  right: 0;
+  width: 7px;
+}
+
+.scrollbar-dynamic > .scroll-element.scroll-x .scroll-element_outer {
+  bottom: 0;
+  top: auto;
+  left: 2px;
+  -webkit-transition: height 0.2s;
+  -o-transition: height 0.2s;
+  transition: height 0.2s;
+}
+
+.scrollbar-dynamic > .scroll-element.scroll-y .scroll-element_outer {
+  left: auto;
+  right: 0;
+  top: 2px;
+  -webkit-transition: width 0.2s;
+  -o-transition: width 0.2s;
+  transition: width 0.2s;
+}
+
+.scrollbar-dynamic > .scroll-element.scroll-x .scroll-element_size {
+  left: -4px;
+}
+
+.scrollbar-dynamic > .scroll-element.scroll-y .scroll-element_size {
+  top: -4px;
+}
+
+/* update scrollbar offset if both scrolls are visible */
+.scrollbar-dynamic > .scroll-element.scroll-x.scroll-scrolly_visible .scroll-element_size {
+  left: -11px;
+}
+
+.scrollbar-dynamic > .scroll-element.scroll-y.scroll-scrollx_visible .scroll-element_size {
+  top: -11px;
+}
+
+/* hover & drag */
+.scrollbar-dynamic > .scroll-element:hover .scroll-element_outer,
+.scrollbar-dynamic > .scroll-element.scroll-draggable .scroll-element_outer {
+  overflow: hidden;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+  filter: alpha(opacity=70);
+  opacity: 0.7;
+}
+
+.scrollbar-dynamic > .scroll-element:hover .scroll-element_outer .scroll-element_size,
+.scrollbar-dynamic > .scroll-element.scroll-draggable .scroll-element_outer .scroll-element_size {
+  opacity: 1;
+}
+
+.scrollbar-dynamic > .scroll-element:hover .scroll-element_outer .scroll-bar,
+.scrollbar-dynamic > .scroll-element.scroll-draggable .scroll-element_outer .scroll-bar {
+  height: 100%;
+  width: 100%;
+  -webkit-border-radius: 12px;
+  border-radius: 12px;
+}
+
+.scrollbar-dynamic > .scroll-element.scroll-x:hover .scroll-element_outer,
+.scrollbar-dynamic > .scroll-element.scroll-x.scroll-draggable .scroll-element_outer {
+  height: 20px;
+  min-height: 7px;
+}
+
+.scrollbar-dynamic > .scroll-element.scroll-y:hover .scroll-element_outer,
+.scrollbar-dynamic > .scroll-element.scroll-y.scroll-draggable .scroll-element_outer {
+  min-width: 7px;
+  width: 20px;
+}
+
+/*************** SCROLLBAR GOOGLE CHROME ***************/
+.scrollbar-chrome > .scroll-element,
+.scrollbar-chrome > .scroll-element div {
+  border: none;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  z-index: 10;
+}
+
+.scrollbar-chrome > .scroll-element {
+  background-color: #ffffff;
+}
+
+.scrollbar-chrome > .scroll-element div {
+  display: block;
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.scrollbar-chrome > .scroll-element .scroll-element_track {
+  background: #f1f1f1;
+  border: 1px solid #dbdbdb;
+}
+
+.scrollbar-chrome > .scroll-element.scroll-x {
+  bottom: 0;
+  height: 16px;
+  left: 0;
+  min-width: 100%;
+  width: 100%;
+}
+
+.scrollbar-chrome > .scroll-element.scroll-y {
+  height: 100%;
+  min-height: 100%;
+  right: 0;
+  top: 0;
+  width: 16px;
+}
+
+.scrollbar-chrome > .scroll-element .scroll-bar {
+  background-color: #d9d9d9;
+  border: 1px solid #bdbdbd;
+  cursor: default;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+}
+
+.scrollbar-chrome > .scroll-element .scroll-bar:hover {
+  background-color: #c2c2c2;
+  border-color: #a9a9a9;
+}
+
+.scrollbar-chrome > .scroll-element.scroll-draggable .scroll-bar {
+  background-color: #919191;
+  border-color: #7e7e7e;
+}
+
+/* scrollbar height/width & offset from container borders */
+.scrollbar-chrome > .scroll-content.scroll-scrolly_visible {
+  left: -16px;
+  margin-left: 16px;
+}
+
+.scrollbar-chrome > .scroll-content.scroll-scrollx_visible {
+  top: -16px;
+  margin-top: 16px;
+}
+
+.scrollbar-chrome > .scroll-element.scroll-x .scroll-bar {
+  height: 8px;
+  min-width: 10px;
+  top: 3px;
+}
+
+.scrollbar-chrome > .scroll-element.scroll-y .scroll-bar {
+  left: 3px;
+  min-height: 10px;
+  width: 8px;
+}
+
+.scrollbar-chrome > .scroll-element.scroll-x .scroll-element_outer {
+  border-left: 1px solid #dbdbdb;
+}
+
+.scrollbar-chrome > .scroll-element.scroll-x .scroll-element_track {
+  height: 14px;
+  left: -3px;
+}
+
+.scrollbar-chrome > .scroll-element.scroll-x .scroll-element_size {
+  height: 14px;
+  left: -4px;
+}
+
+.scrollbar-chrome > .scroll-element.scroll-y .scroll-element_outer {
+  border-top: 1px solid #dbdbdb;
+}
+
+.scrollbar-chrome > .scroll-element.scroll-y .scroll-element_track {
+  top: -3px;
+  width: 14px;
+}
+
+.scrollbar-chrome > .scroll-element.scroll-y .scroll-element_size {
+  top: -4px;
+  width: 14px;
+}
+
+/* update scrollbar offset if both scrolls are visible */
+.scrollbar-chrome > .scroll-element.scroll-x.scroll-scrolly_visible .scroll-element_size {
+  left: -19px;
+}
+
+.scrollbar-chrome > .scroll-element.scroll-y.scroll-scrollx_visible .scroll-element_size {
+  top: -19px;
+}
+
+.scrollbar-chrome > .scroll-element.scroll-x.scroll-scrolly_visible .scroll-element_track {
+  left: -19px;
+}
+
+.scrollbar-chrome > .scroll-element.scroll-y.scroll-scrollx_visible .scroll-element_track {
+  top: -19px;
+}
+
+.flex-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+.justify-sb {
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.align-center {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.justify-end {
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.align-self-end {
+  -webkit-align-self: flex-end;
+      -ms-flex-item-align: end;
+          align-self: flex-end;
+}
+
+.fixed-to-top {
+  position: fixed;
+  z-index: 99;
+  top: 0;
+}
+
+.grow-one {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: 1;
+      -ms-flex-flow: 1;
+          flex-flow: 1;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-orange {
+  color: #f58220;
+}
+
+.text-grey {
+  color: #bababa;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.text-bold {
+  font-weight: 700;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+#loading {
+  background-color: #374140;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 101;
+  margin-top: 0;
+  top: 0;
+  -webkit-transition: opasity .3s linear, z-index .1s linear .3s;
+  -o-transition: opasity .3s linear, z-index .1s linear .3s;
+  transition: opasity .3s linear, z-index .1s linear .3s;
+}
+
+#loading.hide {
+  z-index: -1;
+  opacity: 0;
+}
+
+#loading-center {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+#loading-center-absolute {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 150px;
+  width: 150px;
+  margin-top: -75px;
+  margin-left: -75px;
+}
+
+.object {
+  width: 20px;
+  height: 20px;
+  background-color: #FFF;
+  float: left;
+  margin-right: 20px;
+  margin-top: 65px;
+  -webkit-border-radius: 50% 50% 50% 50%;
+  border-radius: 50% 50% 50% 50%;
+}
+
+#object_one {
+  -webkit-animation: object_one 1.5s infinite;
+  animation: object_one 1.5s infinite;
+}
+
+#object_two {
+  -webkit-animation: object_two 1.5s infinite;
+  animation: object_two 1.5s infinite;
+  -webkit-animation-delay: 0.25s;
+  animation-delay: 0.25s;
+}
+
+#object_three {
+  -webkit-animation: object_three 1.5s infinite;
+  animation: object_three 1.5s infinite;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+
+@-webkit-keyframes object_one {
+  75% {
+    -webkit-transform: scale(0);
+  }
+}
+
+@keyframes object_one {
+  75% {
+    transform: scale(0);
+    -webkit-transform: scale(0);
+  }
+}
+
+@-webkit-keyframes object_two {
+  75% {
+    -webkit-transform: scale(0);
+  }
+}
+
+@keyframes object_two {
+  75% {
+    transform: scale(0);
+    -webkit-transform: scale(0);
+  }
+}
+
+@-webkit-keyframes object_three {
+  75% {
+    -webkit-transform: scale(0);
+  }
+}
+
+@keyframes object_three {
+  75% {
+    transform: scale(0);
+    -webkit-transform: scale(0);
+  }
+}
+
+.page-title, .section-title {
+  color: #a6a6a6;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.page-title {
+  text-transform: uppercase;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.container.sm {
+  max-width: 684px;
+}
+
+#header {
+  width: 100%;
+  border-bottom: 1px solid #e3e3e3;
+  background-color: #fff;
+}
+
+#header .user-control {
+  padding: 18px;
+  border-left: 1px solid #e3e3e3;
+  font-weight: 400;
+  font-size: 20px;
+  color: #9c9c9c;
+  position: relative;
+}
+
+#header .user-control span {
+  margin: 0 20px 0 15px;
+}
+
+#header .user-control .icon-arrow-down {
+  font-size: 12px;
+}
+
+#header .user-control .blue-text {
+  font-weight: 300;
+  font-size: 13px;
+  color: #56819f;
+  vertical-align: middle;
+}
+
+#header .user-control .circle-one {
+  padding: 4px 4px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  background-color: #f58220;
+  position: absolute;
+  left: 15px;
+  top: 15px;
+}
+
+#header .user-control.open {
+  background-color: #f5f5f5;
+}
+
+#header .user-control.open .icon-arrow-down {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+  display: inline-block;
+  line-height: 0;
+}
+
+#header .user-control .icon-profile {
+  vertical-align: middle;
+}
+
+#header .user-control:hover {
+  background-color: #f5f5f5;
+}
+
+#aside .aside-menu ul li.active a, #aside .aside-menu ul li a:hover {
+  border-left-color: #f58220;
+  background-color: #282828;
+  color: #fff;
+}
+
+#aside {
+  background-color: #191919;
+  width: 188px;
+  height: 100vh;
+  left: 0;
+  z-index: 100;
+}
+
+#aside .menu-control {
+  padding: 18px;
+}
+
+#aside .menu-control .menu-btn {
+  cursor: pointer;
+}
+
+#aside .menu-control .menu-btn span {
+  display: block;
+  width: 18px;
+  height: 2px;
+  background-color: #979797;
+}
+
+#aside .menu-control .menu-btn span + span {
+  margin-top: 5px;
+}
+
+#aside .aside-menu ul li {
+  color: #979797;
+}
+
+#aside .aside-menu ul li a {
+  display: block;
+  padding: 14px;
+  border-left: 4px solid transparent;
+}
+
+#aside .aside-menu ul li a [class*="icon-"] {
+  font-size: 17px;
+  margin-right: 15px;
+}
+
+.your-manager {
+  padding: 26px 52px 0 18px;
+  border-top: 1px solid #333;
+  margin-top: 25px;
+}
+
+.your-manager span {
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #9c9c9c;
+}
+
+.your-manager .manager {
+  margin-top: 18px;
+  position: relative;
+}
+
+.your-manager .manager a {
+  color: #56819f;
+}
+
+.your-manager .manager a:hover {
+  color: #f58220;
+}
+
+.your-manager .manager .circle {
+  padding: 6px 6px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  background-color: #04ae00;
+  position: absolute;
+  top: 0;
+  left: 32px;
+}
+
+.your-manager .manager img {
+  width: 43px;
+  height: 43px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+}
+
+.content-wrapper {
+  padding: 18px;
+  height: -webkit-calc 100 vh-62 px;
+  height: calc 100 vh-62 px;
+  overflow-y: auto;
+}
+
+.card {
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.card .card-header {
+  border-bottom: 1px solid #e3e3e3;
+  padding: 18px;
+}
+
+.card .card-date {
+  padding: 30px 0;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.card .btn-row {
+  margin-top: 23px;
+  margin-bottom: 23px;
+}
+
+.card .card-form .select-group {
+  padding: 18px;
+}
+
+.card .card-form .input-group {
+  margin-right: 15px;
+}
+
+.card .card-form .input-group label {
+  display: block;
+  font-size: 16px;
+  color: #a6a6a6;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.card .card-form .input-group input {
+  width: 100%;
+}
+
+.datepicker-form .date-input-wrap {
+  padding: 5px 0;
+  display: inline-block;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  border: 1px solid #e3e3e3;
+  color: #333;
+  vertical-align: middle;
+  margin-right: 12px;
+}
+
+.datepicker-form .date-input-wrap input {
+  padding: 11px 16px;
+  vertical-align: middle;
+}
+
+.datepicker-form .date-input-wrap input#to {
+  border-left: 1px solid #e3e3e3;
+}
+
+.datepicker-form .date-input-wrap label {
+  padding: 0 14px 0 10px;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.datepicker-form .btn {
+  vertical-align: middle;
+}
+
+.btn {
+  padding: 20px 44px;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  color: #fff;
+  font-size: 18px;
+}
+
+.btn:hover {
+  color: #fff;
+}
+
+.btn-default {
+  background-color: #979797;
+}
+
+.btn-default:hover {
+  background-color: #bababa;
+}
+
+.btn-action {
+  padding: 11px 21px;
+  background-color: #f58220;
+}
+
+.btn-action:hover {
+  background-color: #ffa200;
+}
+
+.btn-disabled {
+  padding: 10px 25px;
+  background-color: #e3e3e3;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+}
+
+.form-control {
+  border: 1px solid #e3e3e3;
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
+  font-size: 12px;
+  color: #a6a6a6;
+  padding: 13px 16px;
+  font-family: "Roboto", sans-serif;
+}
+
+.form-control:hover {
+  border-color: #b1b1b1;
+  cursor: pointer;
+  color: #333;
+}
+
+.form-control:focus {
+  border-color: #e3e3e3;
+  cursor: pointer;
+  color: #333;
+}
+
+.form-control:disabled {
+  cursor: not-allowed;
+  border-color: #e3e3e3;
+  background-color: #e3e3e3;
+}
+
+.form-control:invalid {
+  border-color: #ff0000;
+}
+
+.big {
+  padding: 13px 165px;
+}
+
+.big-width {
+  width: 120px;
+}
+
+.big-width-two {
+  width: 400px;
+}
+
+.fixed-width {
+  width: 330px;
+}
+
+textarea {
+  padding: 17px;
+  resize: none;
+  color: #000;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  padding: 10px 18px 24px;
+  top: 0;
+  padding-top: 70px;
+  left: 0;
+  right: 0;
+  background: -webkit-linear-gradient(top, transparent, transparent 60px, #f5f5f5 0);
+  background: -o-linear-gradient(top, transparent, transparent 60px, #f5f5f5 0);
+  background: linear-gradient(to bottom, transparent, transparent 60px, #f5f5f5 0);
+  -webkit-box-shadow: 0 0 10px;
+          box-shadow: 0 0 10px;
+}
+
+.dropdown-menu li {
+  font-size: 12px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.dropdown-menu li + li {
+  margin-top: 13px;
+}
+
+.dropdown-menu span {
+  color: #000;
+}
+
+.dropdown-menu a:hover {
+  color: #f58220;
+}
+
+.table {
+  font-size: 16px;
+  border-collapse: collapse;
+}
+
+.table tbody tr:hover {
+  background-color: #f1f3f3;
+}
+
+.table tbody tr:hover .hide-icons {
+  opacity: 1;
+}
+
+.table tbody tr:last-child td {
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.table tbody .hide-icons {
+  opacity: 0;
+  -webkit-transition: all .2s linear;
+  -o-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+.table td {
+  padding: 18px;
+  border-top: 1px solid #e3e3e3;
+}
+
+.table .blue-link {
+  color: #56819f;
+}
+
+.table .icon-trash {
+  margin-left: 20px;
+}
+
+.table-small {
+  font-size: 13px;
+  border-collapse: collapse;
+}
+
+.table-small td {
+  padding: 18px;
+  border-top: 1px solid #e3e3e3;
+}
+
+.table-small tbody tr:hover {
+  background-color: #f1f3f3;
+}
+
+.table-small thead th {
+  padding-left: 19px;
+  padding-top: 35px;
+  padding-bottom: 15px;
+  color: #a6a6a6;
+  width: 25%;
+}
+
+.table-small thead th .icon-arrow-up-small {
+  font-size: 8px;
+  display: none;
+}
+
+.table-small thead th span:hover {
+  background-color: #f5f5f5;
+  color: #000;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  padding: 10px 10px 10px 10px;
+}
+
+.table-small thead th span:hover .icon-arrow-up-small {
+  display: inline;
+  margin-left: 6px;
+}
+
+nav {
+  text-align: center;
+}
+
+nav .pagination li a {
+  border: none;
+  color: #56819f;
+}
+
+nav .pagination i {
+  font-size: 12px;
+  vertical-align: middle;
+  color: #bababa;
+}
+
+nav .pagination li a:hover {
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  color: #a6a6a6;
+}
+
+.dropdown-menu {
+  float: none;
+  margin: 0;
+  border: none;
+  -webkit-border-radius: 0;
+          border-radius: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.modal {
+  background-color: #fff;
+  display: none;
+}
+
+.modal#links {
+  min-height: 100px;
+  width: 70%;
+}
+
+.input-group .language .lang-ru {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAASxJREFUeNqkk01Ow0AMhZ8zTlMRUUSQuqg4AWyqHCKwoldhzQF6HmADtLkCWSCBxAHYIPEjugCUzEzthn2mxJJnMdI3fs8ek/cefSJCz+CyLC+dczPJ7SpHkeYVe4GLokBjrVyH2iGwMVguFjNmaiH7+yPXYaEE76RQlh/eGky/Gzy+rESSvk0dsIe6PT5MoCyf37zjNX3G/PpJjAlMHTp0as7j4uwIc2EZA/FDMcbZCLGhIAW19Rtmw0KaUbsB9tM9GFEQIsCKAmWUZSQjfCQZOFMHYQ+QHMooS/cD+PzkFHVVtT3onEXbgzjPUd3dgj+HIikewk4m8BQ2SFUQCaMsOxmdiQlmfPBXPECBfgRhlKVlhi/vsLvtTqlYirDSclNJ889dstR3ndcCDABI0W9vitkDJAAAAABJRU5ErkJggg==) no-repeat 0 7px;
+}
+
+.input-group .language .lang-usa {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAbpJREFUeNqkk81LW0EUxc8zz0YRBaEqCBrswm7dWqhB7KYLFdEqBU0pdNXi1m7Ff6Ab240bv7ALKWjiWshTWpBGsBGNgrFPa+pHkaio+PFyvBMnmKa4SHPh8HvzZubOmZk7BknkEnnIMUzj1dAUrpxWOAlpZrjJcwEPinA46kNcmk5al3G7+ldTTZ7sbUFHfSXGglvo8VZjzBI2VGPE2kZ3QxVczQ5KXW49TUFY4Mbm87YnQNdHqkDjBL9H40TTZ4Y0F6JHxLMvvJT+P6J9rQPRoSgQiYjlrkH2T28xZJ8QzX7++KUY0JyhtXNNukEWahWI8kUfBvgzuWdJkEiIg/ZZhndOiRezXI6dJbkUOyc6v/Eqw8F+ysHKqiR4+Ymd47sM/b4kekJc2hP6UlxkUI0ukxXLRRWaD0V9r7UD3whtdQZvY7Tiwnd3DCZ5wPP7HKxGaBxJlpI3TwFr7u5+0kPdbOqGmfbP64U9HIQ5H1mD93EtLv6tgr9yZPaZovD7dRhqH54WD7BtZ1eCVR7YfhtmeCOK0kc1uM6yhKVGsRzdhLEBHMt3cbZPSh/ViWKdTvg/4Ri5PucbAQYA8gA3rogcqYQAAAAASUVORK5CYII=) no-repeat 0 7px;
+}
+
+.input-group .language .lang-fr {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAcRJREFUeNqkk71OG0EUhc+dn13bYGwlZZQ8QHCRgipSKiRaKhrEI4CiPFFSIqWAFJHSR6KhpSASTxDFFhvzY5udmZyZ9S4LZTzSaHdn9p77nXtnJISAVYbCisPI0ckpSr8LT5JIMw+4OHyFYhHg/JJOa/jBAK9HI/in2c9MDP7+cYePuBUwXQCbbzPcLTxc7U4puLUeht++AuvrgDDUGlx92H5vYuZiXmL/y6/KEDNvf3qJ6/mjQFAabmOA4cEe0M9BNODzcWUBAkz4M7qaAvxQAb1Ohnu0BGjBdTvMzgz9HgVKYFosBTgmxEUmJBMEvlprYZhF/KOAMhmQM0nOEMdEN9ctgpljFDclrgRk9JdRoKwrFgm4BivVNCS5bRM8RIFlR42HNpY1cg1BFNCmFtBV/RuCJBAgRqcupBVasE49EfBpXZLVhHrXsvCndFDcTG03klpk6bMtkOpZWxDO+4ZAMClJQDThQQouEuawWbRQHyRTCeSqKqTmc/a3JhCMA6vczdiB+FtSYAzn83PbN9UkEVwjgOn453m/Ocozj8ut3xjPYheWBCygH77Amx8FSYpGj7vTWJF3EfI/75KTVa/zPwEGAOCWsO19nu/2AAAAAElFTkSuQmCC) no-repeat 0 7px;
+}
+
+.input-group .language .jq-selectbox__select-text {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAbpJREFUeNqkk81LW0EUxc8zz0YRBaEqCBrswm7dWqhB7KYLFdEqBU0pdNXi1m7Ff6Ab240bv7ALKWjiWshTWpBGsBGNgrFPa+pHkaio+PFyvBMnmKa4SHPh8HvzZubOmZk7BknkEnnIMUzj1dAUrpxWOAlpZrjJcwEPinA46kNcmk5al3G7+ldTTZ7sbUFHfSXGglvo8VZjzBI2VGPE2kZ3QxVczQ5KXW49TUFY4Mbm87YnQNdHqkDjBL9H40TTZ4Y0F6JHxLMvvJT+P6J9rQPRoSgQiYjlrkH2T28xZJ8QzX7++KUY0JyhtXNNukEWahWI8kUfBvgzuWdJkEiIg/ZZhndOiRezXI6dJbkUOyc6v/Eqw8F+ysHKqiR4+Ymd47sM/b4kekJc2hP6UlxkUI0ukxXLRRWaD0V9r7UD3whtdQZvY7Tiwnd3DCZ5wPP7HKxGaBxJlpI3TwFr7u5+0kPdbOqGmfbP64U9HIQ5H1mD93EtLv6tgr9yZPaZovD7dRhqH54WD7BtZ1eCVR7YfhtmeCOK0kc1uM6yhKVGsRzdhLEBHMt3cbZPSh/ViWKdTvg/4Ri5PucbAQYA8gA3rogcqYQAAAAASUVORK5CYII=) no-repeat 0 7px;
+}
+
+.input-group .language .jq-selectbox__select-text {
+  padding-left: 35px;
+}
+
+.input-group .language .jq-selectbox__dropdown {
+  top: 34px;
+}
+
+.input-group .language .jq-selectbox__dropdown li {
+  padding-left: 45px;
+  background-position: 10px 6px;
+  font-size: 12px;
+  color: #333;
+}
+
+.input-group .language .jq-selectbox__dropdown .jq-selectbox li.selected {
+  background-color: transparent;
+  color: #333;
+}
+
+.input-group .language .jq-selectbox__dropdown .jq-selectbox li {
+  padding-left: 35px;
+  background-position: 10px 5px;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"] + label {
+  font-size: 14px;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+input[type="checkbox"] + label::before {
+  content: '';
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  border: 1px solid #e3e3e3;
+  background-color: #fff;
+  margin-right: 16px;
+}
+
+input[type="checkbox"]:checked + label::before {
+  background: #04ae00 url("../img/checkbox-bg.png") no-repeat center;
+}
+
+.checkbox-wrap {
+  padding: 30px 0;
+}
+
+.checkbox-wrap .checkboxes {
+  padding-top: 30px;
+  height: 170px;
+}
+
+.checkbox-wrap .checkboxes .checkbox-group {
+  padding: 12px 30px 12px 12px;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-flex-basis: 33%;
+      -ms-flex-preferred-size: 33%;
+          flex-basis: 33%;
+}
+
+.checkbox-wrap .checkboxes .checkbox-group:hover {
+  background-color: #f5f5f5;
+}
+
+.checkbox-wrap .checkboxes .checkbox-group:hover [class*='icon-'] {
+  opacity: 1;
+}
+
+.checkbox-wrap .checkboxes .checkbox-group [class*='icon-'] {
+  opacity: 0;
+}
+
 #main {
   padding-left: 188px;
   padding-top: 62px;
@@ -1624,4 +2630,20 @@ input[type='submit'].styler[disabled] {
 
 ._mobileSidebar #aside .your-manager {
   display: none;
+}
+
+.generate-links input[type='text'] {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.generate-links .btn {
+  margin-left: 15px;
+}
+
+.generate-links .btn i {
+  vertical-align: sub;
+  margin-right: 15px;
 }
