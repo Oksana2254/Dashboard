@@ -311,31 +311,43 @@
     border-bottom: 1px solid $lightGrey;
     padding: 18px;
   }
-  .card-date{
+  .card-date {
     padding: 30px 0;
     border-bottom: 1px solid $lightGrey;
   }
-  .btn-row{
+  .btn-row {
     margin-top: 23px;
     margin-bottom: 23px;
   }
-  .card-form{
+  .card-form {
 
-    .select-group{
+    .select-group {
       padding: 18px;
-    }
-    .input-group{
-      margin-right: 15px;
 
-      label{
-        display: block;
-        font-size:  $titleFontSize;
-        color: $titleColor;
-        font-weight: 500;
-        margin-bottom: 15px;
+      .input-group:nth-child(3){
+        width: 15%;
       }
-      input{
-        width: 100%;
+      .input-group {
+        width: 40%;
+        margin-right: 15px;
+        font-size: 14px;
+          .input-group #sheme{
+            font-size: 14px;
+          }
+        label {
+          display: block;
+          font-size: $titleFontSize;
+          color: $titleColor;
+          font-weight: 500;
+          margin-bottom: 15px;
+        }
+        input {
+          width: 100%;
+        }
+        .jq-selectbox__select-text{
+          color: $titleColor;
+          font-size: 14px;
+        }
       }
     }
   }
@@ -375,7 +387,7 @@
 //btn
 
 .btn{
-  padding: 20px 44px;
+  padding: 14px 22px;
   border-radius: 3px;
   color: $btn-color;
   font-size: 18px;
@@ -397,7 +409,7 @@
   background-color: $orangeLight;
 }
 .btn-disabled{
-  padding: 10px 25px;
+  padding: 9px 17px;
   background-color: $lightGrey;
   border-radius: 3px;
 }
@@ -408,7 +420,7 @@
 .form-control {
   border: 1px solid $lightGrey;
   border-radius: 2px;
-  font-size: $xssmallFonrSize;
+  font-size: $fontSize;
   color: $inputColor;
   padding: 13px 16px;
   font-family: $fontFamily;
@@ -427,10 +439,11 @@
     cursor: not-allowed;
     border-color: $inputColorDisabled;
     background-color: $inputColorDisabled;
+    color: transparent;
 
-    &:hover {
-      @extend .disabled;
-    }
+    //&:hover {
+    //  @extend .disabled;
+    //}
   }
   &:invalid {
     border-color: $inputColorInvalid;
@@ -439,14 +452,8 @@
 .big{
   padding: 13px 165px;
 }
-.big-width{
-  width: 120px;
-}
-.big-width-two{
-  width: 400px;
-}
-.fixed-width{
-  width: 330px;
+.input-width{
+  width: 40%;
 }
 textarea{
   padding: 17px;
@@ -644,7 +651,17 @@ $labelColor: #a6a6a6;
       padding-left: 35px;
       background-position: 10px 5px;
     }
+
   }
+}
+
+//
+
+.jq-selectbox li.selected{
+  background-color: transparent;
+}
+.jq-selectbox.jqselect{
+  width: 100%;
 }
 
 //checkbox
@@ -677,7 +694,7 @@ input[type="checkbox"]{
 
 //checkbox wrap
 .checkbox-wrap {
-  padding: 30px 0;
+  padding: 18px;
 
   .checkboxes {
     padding-top: 30px;
@@ -697,6 +714,65 @@ input[type="checkbox"]{
       }
     [class*='icon-']{
       opacity: 0;
+      }
+    }
+  }
+}
+
+
+//generate link
+
+.generate-links{
+  padding: 18px;
+  .btn{
+    line-height: 1.3;
+  }
+   i{
+     margin-right: 10px;
+     vertical-align: middle;
+   }
+  .input-shirt{
+    width: 15%;
+  }
+}
+
+.input-shirt{
+  width: 15%;
+}
+.select-shirt{
+  width: 32%;
+}
+
+//checkbox-big
+.check-box-big{
+  width: 50%;
+}
+
+
+//table-details
+
+.table-details {
+  thead {
+    th {
+      padding-left: 19px;
+      padding-top: 35px;
+      padding-bottom: 15px;
+      color: $titleColor;
+      width: auto;
+    }
+    .icon-arrow-up-small {
+      font-size: 8px;
+      display: none;
+    }
+    span:hover {
+      background-color: $xsLightGrey;
+      color: $superBlack;
+      transition: all 0.2s linear;
+      padding: 10px 10px 10px 10px;
+
+      .icon-arrow-up-small{
+        display: inline;
+        margin-left: 6px;
       }
     }
   }
