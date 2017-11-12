@@ -2615,8 +2615,12 @@ input[type="checkbox"]:checked + label::before {
   width: 50%;
 }
 
+.table-details {
+  border-collapse: collapse;
+}
+
 .table-details thead th {
-  padding-left: 19px;
+  padding-left: 40px;
   padding-top: 35px;
   padding-bottom: 15px;
   color: #a6a6a6;
@@ -2640,6 +2644,35 @@ input[type="checkbox"]:checked + label::before {
 .table-details thead span:hover .icon-arrow-up-small {
   display: inline;
   margin-left: 6px;
+}
+
+.table-details td {
+  padding-left: 42px;
+  padding-top: 35px;
+  padding-bottom: 15px;
+  border-top: 1px solid #e3e3e3;
+  font-size: 13px;
+}
+
+.table-details tbody tr:hover {
+  background-color: #f1f3f3;
+}
+
+.table-details tbody tr:last-child {
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.card-body.postback {
+  padding: 18px;
+}
+
+.card-form .textarea-group {
+  width: 50%;
+}
+
+.card-form .textarea-group textarea {
+  height: 165px;
+  width: 100%;
 }
 
 #main {

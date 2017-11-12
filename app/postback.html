@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Template</title>
+    <title>Postback</title>
 
     <!--Google font-->
 
@@ -124,52 +124,35 @@
         </div>
     </div>
 </aside>
-
-<main id="main">
+<main id = 'main'>
     <div class="content-wrapper">
         <div class="card">
             <div class="card-header">
-                <span class="page-title">General statistic</span>
+                <span class="page-title">New Postback</span>
             </div>
-            <div class="card-date text-center" >
-                <form class="datepicker-form">
-                    <div class="date-input-wrap">
-                        <input type="text" name="from" id="from">
-                        <input type="text" name="to" id="to">
-                        <label for="to">
-                        <i class="icon-calendar"></i>
-                        </label>
-                    </div>
-                    <button class="btn btn-action">
-                        <i class="icon-refresh"></i>
-                    </button>
-                </form>
-            </div>
-            <div class="card-body">
-                <div class="chart-wrap">
-                    <canvas id="myChart" width="600"
-                    height="400"></canvas>
+            <div class="card-body postback">
+                <div class="isert-parametrs">
+                    <span>You can insert some parameters in this postback: </span>
                 </div>
+            </div>
+            <div class="card-form">
+            <form  action="">
+                <div class="textarea-group flex-container">
+                    <div class="signup-block">
+                        <label for="signap" class="section-title">Signup</label>
+                        <textarea name="" id="signap" class="form-control"></textarea>
+                    </div>
+                <div class="deposit-block">
+                    <label for="deposit" class="section-title">Deposit</label>
+                    <textarea name="" id="deposit" class="form-control"></textarea>
+                </div>
+              </div>
+            </form>
             </div>
         </div>
     </div>
 </main>
-
-<!--loader start-->
-<div id="loading">
-    <div id="loading-center">
-        <div id="loading-center-absolute">
-            <div class="object" id="object_one"></div>
-            <div class="object" id="object_two"></div>
-            <div class="object" id="object_three"></div>
-
-        </div>
-    </div>
-<!--loader end-->
-</div>
-<!--ASIDE END-->
-
-<!-- jQuery -->
+</body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
@@ -184,5 +167,5 @@
 
 <script src="js/plugins.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-</body>
+
 </html>

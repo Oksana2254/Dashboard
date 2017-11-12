@@ -752,9 +752,12 @@ input[type="checkbox"]{
 //table-details
 
 .table-details {
+
+  border-collapse: collapse;
+
   thead {
     th {
-      padding-left: 19px;
+      padding-left: 40px;
       padding-top: 35px;
       padding-bottom: 15px;
       color: $titleColor;
@@ -770,10 +773,45 @@ input[type="checkbox"]{
       transition: all 0.2s linear;
       padding: 10px 10px 10px 10px;
 
-      .icon-arrow-up-small{
+      .icon-arrow-up-small {
         display: inline;
         margin-left: 6px;
       }
+    }
+  }
+  td {
+    padding-left: 42px;
+    padding-top: 35px;
+    padding-bottom: 15px;
+    border-top: 1px solid $lightGrey;
+    font-size: $smallFontSize;
+  }
+  tbody {
+
+    tr:hover {
+      background-color: $tableTrHover;
+    }
+    tr:last-child{
+      border-bottom: 1px solid $lightGrey;
+    }
+  }
+}
+
+// description of postback page
+
+.card-body.postback{
+  padding: 18px;
+
+}
+.card-form {
+
+  .textarea-group {
+
+    width: 50%;
+
+    textarea {
+      height: 165px;
+      width: 100%;
     }
   }
 }
