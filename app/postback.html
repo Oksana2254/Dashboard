@@ -140,13 +140,87 @@
                 <div class="textarea-group flex-container">
                     <div class="signup-block">
                         <label for="signap" class="section-title">Signup</label>
-                        <textarea name="" id="signap" class="form-control"></textarea>
+                        <textarea name="" id="signap" class="form-control" placeholder="crm_userId =%user_id%
+subid =%p%"></textarea>
                     </div>
                 <div class="deposit-block">
                     <label for="deposit" class="section-title">Deposit</label>
-                    <textarea name="" id="deposit" class="form-control"></textarea>
+                    <textarea name="" id="deposit" class="form-control" placeholder="crm_userId =%user_id%
+subid =%p%"></textarea>
                 </div>
               </div>
+                <div class="select-group-postback flex-container align-center">
+                    <div class="input-group">
+                        <label for="">Postback type</label>
+                        <select name="" id ="" class="">
+                            <option value="" disabled selected hidden>S7S (http://..)</option>
+                            <option>S2S (http://..)</option>
+                            <option>S3S (http://..)</option>
+                            <option>S4S (http://..)</option>
+                        </select>
+                    </div>
+                    <div class="input-group align-self-end">
+                        <label for="">To countries</label>
+                        <select name="" id="" class="">
+                            <option value="" disabled selected hidden>Select countries</option>
+                            <option value="">Ukraine</option>
+                            <option value="">Poland</option>
+                            <option value="">Portugal</option>
+
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label for="">Sending options</label>
+                        <select name="" id ="" class="">
+                            <option value="" disabled selected hidden>Select</option>
+                            <option>one</option>
+                            <option>two</option>
+                            <option>three</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="parametrs-create-pixel flex-container">
+                    <div class="not-send">
+
+                        <div class="checkbox-wrap">
+                            <span class="not">not</span>
+                            <h3 class="section-title">send statuses</h3>
+                            <div class="scroll-wrapper checkboxes flex-container scrollbar-inner">
+                                <div class="checkboxes flex-container scrollbar-inner">
+                                    <div class="checkbox-group flex-container align-center">
+                                        <input type="checkbox" name="link31" id="link31">
+                                        <label for="link31" class="flex-container align-center">Landing page Money</label>
+                                        <a href="" class="ml-auto"><i class="icon-show"></i></a>
+                                    </div>
+                                    <div class="checkbox-group flex-container align-center">
+                                        <input type="checkbox" name="link32" id="link32">
+                                        <label for="link32" class="flex-container align-center">Mobile app</label>
+                                        <a href="" class="ml-auto"><i class="icon-show"></i></a>
+                                    </div>
+                                    <div class="checkbox-group flex-container align-center">
+                                        <input type="checkbox" name="link33" id="link33">
+                                        <label for="link33" class="flex-container align-center">Your second site</label>
+                                        <a href="" class="ml-auto"><i class="icon-show"></i></a>
+                                    </div>
+                                    <div class="checkbox-group flex-container align-center">
+                                        <input type="checkbox" name="link34" id="link34">
+                                        <label for="link34" class="flex-container align-center">LP Your choise</label>
+                                        <a href="" class="ml-auto"><i class="icon-show"></i></a>
+                                    </div>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="send-after range-slider-wrap">
+                        <h3 class="section-title">Send after</h3>
+                        <div id = "slider">
+                            <div id ="custom-handle" class="ui-slider-handle"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="button-create-pixeles">
+                    <button class="btn btn-action">Create pixel</button>
+                </div>
             </form>
             </div>
         </div>

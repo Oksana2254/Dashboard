@@ -87,4 +87,24 @@ $( function() {
             }
         })
     }
+    //range slider init
+    var handle = $('#custom-handle');
+    var range = $('#slider');
+
+    range.slider({
+        value : 50,
+        orientation: 'horizontal',
+        range : 'min',
+        animate : true,
+        max: 200,
+        create: function(event, ui) {
+            handle.append( '<span class = "value">'+ $( this ).slider( "value" ) + 'hours</span>');
+            var value = handle.find('.value');
+            range.slider("option","valueSpan", value);
+        },
+        slide: function( event, ui ) {
+            range.slider( "option", "valueSpan").text(ui.value + 'hours');
+        }
+    });
+
 } );

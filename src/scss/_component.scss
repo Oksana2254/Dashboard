@@ -801,17 +801,121 @@ input[type="checkbox"]{
 
 .card-body.postback{
   padding: 18px;
-
 }
 .card-form {
+  padding: 18px;
 
   .textarea-group {
-
-    width: 50%;
-
+    margin-bottom: 20px;
     textarea {
-      height: 165px;
+      height: 187px;
       width: 100%;
+      margin-top: 23px;
+    }
+  }
+  .signup-block{
+    width: 50%;
+    padding-right: 9px;
+  }
+  .deposit-block{
+    width: 50%;
+    padding-left: 9px;
+  }
+
+  .select-group-postback{
+    label{
+      display: block;
+      margin-bottom: 15px;
+      color: $titleColor;
+      font-size: $titleFontSize;
+      font-weight: $fontMedium;
+
+    }
+    .input-group{
+      width: 32%;
+    }
+    .input-group:nth-child(-n + 2){
+      margin-right: 25px;
+    }
+  }
+  .parametrs-create-pixel{
+    border-bottom: 1px solid $lightGrey;
+    border-top: 1px solid $lightGrey;
+    margin-top: 36px;
+    margin-bottom: 28px;
+
+    .checkbox-wrap{
+      padding: 0;
+    }
+
+    .not-send{
+      width: 50%;
+      padding: 30px 19px;
+
+      .section-title{
+        display: inline;
+      }
+      .not{
+        text-transform: uppercase;
+        color: $red;
+        font-weight: $fontMedium;
+        font-size: $titleFontSize;
+      }
+    }
+    .send-after{
+      width: 50%;
+      border-left: 1px solid $lightGrey;
+      padding: 30px 19px;
     }
   }
 }
+//range slider
+#custom-handle {
+  top: 12px;
+  width: 0;
+  height: 0;
+  border: 20px solid transparent;
+  border-bottom-color: $orange;
+  border-left: 14px solid transparent;
+  border-right: 14px solid transparent;
+  background: transparent;
+
+  span {
+    position: absolute;
+    top: 25px;
+    left: -25px;
+  }
+  &range-slider-wrap {
+    height: 100px;
+  }
+}
+  #slider {
+    margin-top: 34px;
+    height: 6px;
+  }
+      .ui-slider-horizontal {
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 0;
+      }
+      .ui-widget-header {
+        border: none;
+        border-radius: 0;
+        background-color: $orange;
+      }
+      .ui-widget.ui-widget-content {
+        border-radius: 0;
+        border: none;
+        background-color: $lightGrey;
+      }
+
+    .ui-corner-all,
+    .ui-corner-bottom,
+    .ui-corner-right,
+    .ui-corner-br {
+      border-radius: 0;
+    }
+    .button-create-pixeles{
+      text-align: right;
+    }
+

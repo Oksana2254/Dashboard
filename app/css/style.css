@@ -2666,13 +2666,138 @@ input[type="checkbox"]:checked + label::before {
   padding: 18px;
 }
 
+.card-form {
+  padding: 18px;
+}
+
 .card-form .textarea-group {
-  width: 50%;
+  margin-bottom: 20px;
 }
 
 .card-form .textarea-group textarea {
-  height: 165px;
+  height: 187px;
   width: 100%;
+  margin-top: 23px;
+}
+
+.card-form .signup-block {
+  width: 50%;
+  padding-right: 9px;
+}
+
+.card-form .deposit-block {
+  width: 50%;
+  padding-left: 9px;
+}
+
+.card-form .select-group-postback label {
+  display: block;
+  margin-bottom: 15px;
+  color: #a6a6a6;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.card-form .select-group-postback .input-group {
+  width: 32%;
+}
+
+.card-form .select-group-postback .input-group:nth-child(-n + 2) {
+  margin-right: 25px;
+}
+
+.card-form .parametrs-create-pixel {
+  border-bottom: 1px solid #e3e3e3;
+  border-top: 1px solid #e3e3e3;
+  margin-top: 36px;
+  margin-bottom: 28px;
+}
+
+.card-form .parametrs-create-pixel .checkbox-wrap {
+  padding: 0;
+}
+
+.card-form .parametrs-create-pixel .not-send {
+  width: 50%;
+  padding: 30px 19px;
+}
+
+.card-form .parametrs-create-pixel .not-send .section-title {
+  display: inline;
+}
+
+.card-form .parametrs-create-pixel .not-send .not {
+  text-transform: uppercase;
+  color: #ff0000;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.card-form .parametrs-create-pixel .send-after {
+  width: 50%;
+  border-left: 1px solid #e3e3e3;
+  padding: 30px 19px;
+}
+
+#custom-handle {
+  top: 12px;
+  width: 0;
+  height: 0;
+  border: 20px solid transparent;
+  border-bottom-color: #f58220;
+  border-left: 14px solid transparent;
+  border-right: 14px solid transparent;
+  background: transparent;
+}
+
+#custom-handle span {
+  position: absolute;
+  top: 25px;
+  left: -25px;
+}
+
+#custom-handlerange-slider-wrap {
+  height: 100px;
+}
+
+#slider {
+  margin-top: 34px;
+  height: 6px;
+}
+
+.ui-slider-horizontal {
+  -webkit-border-top-right-radius: 0;
+          border-top-right-radius: 0;
+  -webkit-border-bottom-left-radius: 0;
+          border-bottom-left-radius: 0;
+  -webkit-border-top-left-radius: 0;
+          border-top-left-radius: 0;
+}
+
+.ui-widget-header {
+  border: none;
+  -webkit-border-radius: 0;
+          border-radius: 0;
+  background-color: #f58220;
+}
+
+.ui-widget.ui-widget-content {
+  -webkit-border-radius: 0;
+          border-radius: 0;
+  border: none;
+  background-color: #e3e3e3;
+}
+
+.ui-corner-all,
+.ui-corner-bottom,
+.ui-corner-right,
+.ui-corner-br {
+  -webkit-border-radius: 0;
+          border-radius: 0;
+}
+
+.button-create-pixeles {
+  text-align: right;
 }
 
 #main {
